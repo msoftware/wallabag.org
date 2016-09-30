@@ -50,7 +50,7 @@ sortorder: 20
   <div class="col-lg-6">
     <h2>Available in your language</h2>
     wallabag is translated into more than ten languages.<br />
-    If yours is not yet available, please help us to do it. 
+    If yours is not yet available, please help <a href="http://doc.wallabag.org/en/master/developer/translate.html">translate</a>. 
   </div>
 </div>
 <hr />
