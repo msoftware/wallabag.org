@@ -17,6 +17,8 @@ Please don't use old releases, or you will find less support and they may contai
   </thead>
   <tbody>
     <tr class="success">
+      <td>**2.1.0**</td><td>**2016-10-03**</td><td>[blog post](https://www.wallabag.org/blog/2016/10/03/wallabag-21)</td></tr>
+    <tr>
       <td>2.0.8</td><td>2016-09-07</td><td>[blog post](https://www.wallabag.org/blog/2016/09/07/wallabag-208)</td></tr>
     <tr>
       <td>2.0.7</td><td>2016-08-22</td><td>[blog post](https://www.wallabag.org/blog/2016/08/22/wallabag-207)</td></tr>
@@ -51,7 +53,7 @@ Please don't use old releases, or you will find less support and they may contai
     <tr class="info">
       <td>**1.9.0**</td><td>**2015-02-18**</td><td>[blog post](https://www.wallabag.org/blog/2015/02/18/wallabag-1-9-many-features)</td></tr>
     <tr>
-      <td>1.8.1</td><td>**2014-11-15**</td><td>[blog post](https://www.wallabag.org/blog/2014/11/15/new-release-wallabag-1-8-1)</td></tr>
+      <td>1.8.1</td><td>2014-11-15</td><td>[blog post](https://www.wallabag.org/blog/2014/11/15/new-release-wallabag-1-8-1)</td></tr>
     <tr class="info">
       <td>**1.8.0**</td><td>**2014-10-10**</td><td>[blog post](https://www.wallabag.org/blog/2014/10/10/wallabag-1-8-is-there)</td></tr>
     <tr>

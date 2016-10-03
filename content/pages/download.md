@@ -3,19 +3,21 @@ Menulabel: Downloads
 sortorder: 30
 
 <ul class="nav nav-tabs">
-  <li class="active"><a href="#dedicated" data-toggle="tab" aria-expanded="true">Install and update wallabag v2</a></li>
+  <li class="active"><a href="#dedicated" data-toggle="tab" aria-expanded="true">Install and update wallabag</a></li>
   <li><a href="#docker" data-toggle="tab" aria-expanded="true">Install with docker</a></li>
   <li><a href="#softaculous" data-toggle="tab" aria-expanded="true">Install with Softaculous</a></li>
   <li><a href="#v1" data-toggle="tab" aria-expanded="true">Install wallabag v1</a></li>
 </ul>
 <div id="myTabContent" class="tab-content">
-  <div class="tab-pane fade active in" id="dedicated"><p>
+  <div class="tab-pane fade active in" id="dedicated">
+<p>
 <ul>
- <li>Last version: <strong>2.0.8</strong> (2016/09/07). <a href="https://www.wallabag.org/pages/releases.html">History of wallabag releases is here</a>.</li>
- <li><a href="https://www.wallabag.org/blog/2016/09/07/wallabag-208">Blog post about this version</a></li>
+ <li>Last version: <strong>2.1.0</strong> (2016/03/10). <a href="https://www.wallabag.org/pages/releases.html">History of wallabag releases is here</a>.</li>
+ <li><a href="https://www.wallabag.org/blog/2016/10/03/wallabag-21">Blog post about this version</a></li>
+ <li><a href="#">How to install this version?</a></li>
+ <li><a href="#">How to migrate from wallabag 2.0.x?</a></li>
+ <li><a href="http://doc.wallabag.org/en/master/user/migration.html">How to migrate from wallabag 1.x?</a></li>
 </ul></p>
-    <p>Read our documentation to <a href="http://doc.wallabag.org/en/master/user/installation.html">install wallabag</a> or to <a href="http://doc.wallabag.org/en/master/user/upgrade.html">update it</a>.</p>
-    <p>Do you need to migrate from wallabag v1? <a href="http://doc.wallabag.org/en/master/user/migration.html">Read this documentation</a>.</p>
   </div>
   <div class="tab-pane fade" id="docker"><p>
   <p style="float: right;"><img src="/images/docker.png" alt="Docker logo" /></p>
