@@ -12,8 +12,8 @@ sortorder: 30
   <div class="tab-pane fade active in" id="dedicated">
 <p>
 <ul>
- <li>Last version: <strong>2.1.0</strong> (2016/03/10). <a href="https://www.wallabag.org/pages/releases.html">History of wallabag releases is here</a>.</li>
- <li><a href="https://www.wallabag.org/blog/2016/10/03/wallabag-21">Blog post about this version</a></li>
+ <li>Last version: <strong>2.1.1</strong> (2016/03/10). <a href="https://www.wallabag.org/pages/releases.html">History of wallabag releases is here</a>.</li>
+ <li><a href="https://www.wallabag.org/blog/2016/10/03/wallabag-211">Blog post about this version</a></li>
  <li><a href="http://doc.wallabag.org/en/master/user/installation.html">How to install this version?</a></li>
  <li><a href="http://doc.wallabag.org/en/master/user/upgrade-2.0.x-2.1.y.html">How to migrate from wallabag 2.0.x?</a></li>
  <li><a href="http://doc.wallabag.org/en/master/user/migration.html">How to migrate from wallabag 1.x?</a></li>
