@@ -27,5 +27,5 @@ desc: With wallabag, archive the web freely. wallabag is a self hostable applica
 	<a href="http://lifehacker.com/wallabag-is-a-self-hosted-read-it-later-service-1575106528"><img style="max-width: 10rem;" src="/images/lifehacker.png" /></a>
 	<a href="https://www.reddit.com/r/linux/comments/35zomp/dont_fancy_proprietary_closedsource_pocket_heres/"><img style="max-width: 10rem;" src="/images/reddit.png" /></a>
 	<a href="http://www.numerama.com/tech/160115-le-pocket-libre-wallabag-fait-le-plein-de-fonctionnalites.html"><img style="max-width: 10rem;" src="/images/numerama.png" /></a>
-	<a href="http://www.nextinpact.com/news/99330-sauvegarde-darticles-wallabag-2-0-deboule-avec-longue-liste-nouveautes.htm"><img style="max-width: 10rem;" src="/images/nextinpact.png" /></a>
+	<a href="http://www.nextinpact.com/news/101235-wallabag-alternative-libre-a-pocket-creuse-petit-a-petit-son-nid.htm"><img style="max-width: 10rem;" src="/images/nextinpact.png" /></a>
 </div>
