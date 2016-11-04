@@ -12,9 +12,9 @@ sortorder: 30
   <div class="tab-pane fade active in" id="dedicated">
 <p>
 <ul>
- <li>Last version: <strong>2.1.2</strong> (2016/10/17). <a href="https://www.wallabag.org/pages/releases.html">History of wallabag releases is here</a>.</li>
- <li>MD5 checkum: <code>a0c8ab7322f8bbf5b0defc665a9414e8</code>.</li>
- <li><a href="https://www.wallabag.org/blog/2016/10/17/wallabag-212">Blog post about this version</a></li>
+ <li>Last version: <strong>2.1.3</strong> (2016/11/04). <a href="https://www.wallabag.org/pages/releases.html">History of wallabag releases is here</a>.</li>
+ <li>MD5 checkum: <code>79584549f368ceee9084339cb5228d0b</code>.</li>
+ <li><a href="https://www.wallabag.org/blog/2016/11/04/wallabag-213">Blog post about this version</a></li>
  <li><a href="http://doc.wallabag.org/en/master/user/installation.html">How to install this version?</a></li>
  <li><a href="http://doc.wallabag.org/en/master/user/upgrade-2.1.x-2.1.y.html">How to update from wallabag 2.1.x?</a></li>
  <li><a href="http://doc.wallabag.org/en/master/user/upgrade-2.0.x-2.1.1.html">How to update from wallabag 2.0.x to wallabag 2.1.1?</a></li>
