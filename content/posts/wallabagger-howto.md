@@ -13,20 +13,20 @@ Wallabagger is chrome extension for add pages to wallabag, with ability to:
 - set starred and  archived
 - delete
 
-## Requirement
+## Requirements
 
-- Wallabag v.2 on server side.
+- wallabag v2 on server side.
 - Chrome-based browser
 
 ## Installation
 
-You can install wallabagger by three way:
+You can install Wallabagger by three ways:
 
 - [From google webstore:](https://chrome.google.com/webstore/detail/wallabagger/gbmgphmejlcoihgedabhgjdkcahacjlj) - open this page with chrome-based browser (tested chrome, yandex browser, vivaldi) and click the "add to chrome" button
 
   ![webstore](/images/wallabagger/inst-webstore.png)
 
-- Opera and Yanedex browsers can install extension from [Opera extension site](https://addons.opera.com/ru/extensions/details/wallabagger/)
+- Opera and Yandex browsers can install extension from [Opera extension site](https://addons.opera.com/ru/extensions/details/wallabagger/)
 
 - Use unpacked source:
   - Download source from or clone [github repository](https://github.com/rurik19/wallabagger)
@@ -76,7 +76,7 @@ After installation of wallabagger extension you can setup it by options page. Th
 
    ![checklist](/images/wallabagger/opt-checklist.png)
 
-- If URL was checked and api version is > 2 then appears client and user information fields. Fill it and click "Get token" button. In future access token will get authomatically, when it expires.
+- If URL was checked and correct api is found, then appears client and user information fields. Fill it and click "Get token" button. In future access token will get authomatically, when it expires.
 
    ![Client fields](/images/wallabagger/opt-clientfields.png)
 
