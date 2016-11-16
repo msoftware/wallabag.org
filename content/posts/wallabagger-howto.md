@@ -20,9 +20,9 @@ Wallabagger is a chrome extension to add pages to wallabag, with the ability to:
 
 ## Installation
 
-You can install Wallabagger from three ways:
+You can install Wallabagger from these ways:
 
-- [From google webstore:](https://chrome.google.com/webstore/detail/wallabagger/gbmgphmejlcoihgedabhgjdkcahacjlj) - open this page with Chromium-based browser (tested Chrome, Yandex browser, Vivaldi) and click the "add to chrome" button
+- [From google webstore:](https://chrome.google.com/webstore/detail/wallabagger/gbmgphmejlcoihgedabhgjdkcahacjlj). Open this page with Chromium-based browser (tested Chrome, Yandex browser, Vivaldi) and click the "add to chrome" button
 
   ![webstore](/images/wallabagger/inst-webstore.png)
 
@@ -49,8 +49,9 @@ You can install Wallabagger from three ways:
 
 ## Options
 
-First of all: you have to create a new client on your wallabag installation. How to do that is described in [Documentation](http://doc.wallabag.org/en/master/developer/api.html#creating-a-new-api-client)
-What we need from that client is two strings: Client ID and Client secret:
+First of all you have to create a new client on your wallabag installation. How to do that is described in [Documentation](http://doc.wallabag.org/en/master/developer/api.html#creating-a-new-api-client)
+
+What we need from that client is two strings: Client ID and Client secret.
 
    ![Client](/images/wallabagger/opt-client.png)
 
