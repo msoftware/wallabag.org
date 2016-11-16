@@ -5,31 +5,31 @@ tags: wallabagger
 
 # Wallabagger howto
 
-Wallabagger is chrome extension for add pages to wallabag, with ability to:
+Wallabagger is a chrome extension to add pages to wallabag, with the ability to:
 
 - save current page
 - edit title
 - add (with autocomplete!) and remove tags
-- set starred and  archived
+- set starred and archived
 - delete
 
 ## Requirements
 
 - wallabag v2 on server side.
-- Chrome-based browser
+- Chromium-based browser (Crome, Opera, Yandex, Vivaldi, etc.)
 
 ## Installation
 
-You can install Wallabagger by three ways:
+You can install Wallabagger from three ways:
 
-- [From google webstore:](https://chrome.google.com/webstore/detail/wallabagger/gbmgphmejlcoihgedabhgjdkcahacjlj) - open this page with chrome-based browser (tested chrome, yandex browser, vivaldi) and click the "add to chrome" button
+- [From google webstore:](https://chrome.google.com/webstore/detail/wallabagger/gbmgphmejlcoihgedabhgjdkcahacjlj) - open this page with Chromium-based browser (tested Chrome, Yandex browser, Vivaldi) and click the "add to chrome" button
 
   ![webstore](/images/wallabagger/inst-webstore.png)
 
-- Opera and Yandex browsers can install extension from [Opera extension site](https://addons.opera.com/ru/extensions/details/wallabagger/)
+- Opera and Yandex browsers can install the extension from [Opera extension site](https://addons.opera.com/ru/extensions/details/wallabagger/)
 
-- Use unpacked source:
-  - Download source from or clone [github repository](https://github.com/rurik19/wallabagger)
+- Use the unpacked source:
+  - Download the source from the github repository or clone the repository [github repository](https://github.com/rurik19/wallabagger)
   - Go to your chrome-based browser [extension setup page](chrome://extensions)
   - Click "Developer mode" checkbox
 
@@ -49,55 +49,56 @@ You can install Wallabagger by three ways:
 
 ## Options
 
-First of all: you have to create new client on your wallabag installation. How to do that is described in [Documentation](http://doc.wallabag.org/en/master/developer/api.html#creating-a-new-api-client)
+First of all: you have to create a new client on your wallabag installation. How to do that is described in [Documentation](http://doc.wallabag.org/en/master/developer/api.html#creating-a-new-api-client)
 What we need from that client is two strings: Client ID and Client secret:
 
    ![Client](/images/wallabagger/opt-client.png)
 
 ### Access options page
 
-After installation of wallabagger extension you can setup it by options page. This page is accessible by
+After the installation of Wallabagger extension you can setup it by going to the options page. This page is accessible by
 
 - Right click on extension icon and choose menu "options"
 
    ![Menu](/images/wallabagger/opt-menu.png)
 
-- Go to your chrome-based browser [extension setup page](chrome://extensions), and click on "options" in wallabagger section
+- Go to your Chromium-based browser [extension setup page](chrome://extensions), and click on the "options" link in the Wallabagger section
 
    ![extensions](/images/wallabagger/opt-ext-optlink.png)
 
 ### Setup process
 
-- Enter URL of your wallabag installation (without "http://" ), check "https" if you use that, and click "Check URL" button
+- Enter the URL of your wallabag installation (without "http://" ), check "https" if you use that, and click "Check URL" button
 
    ![URL](/images/wallabagger/opt-url.png)
 
-   if URL is valid then in checklist in the bottom of page will be information about that.
+   if the URL is valid then in checklist in the bottom of page will be information about that.
 
    ![checklist](/images/wallabagger/opt-checklist.png)
 
-- If URL was checked and correct api is found, then appears client and user information fields. Fill it and click "Get token" button. In future access token will get authomatically, when it expires.
+- If the URL was checked and a correct api is found, then the client and user credential fields appears. Fill them and click the "Get token" button. From now access token will be fetched authomatically, when it expires.
 
    ![Client fields](/images/wallabagger/opt-clientfields.png)
 
-    if information is correct in checklist will be information about that.
+    if the credentials are correct you'll see it in the checklist with an information about that.
 
    ![Token granted](/images/wallabagger/opt-granted.png)
 
-- If you are to have tags consisting space in its, check appropriate options. This change fix symbol in tag input from Space to Enter
+- If you have tags including spaces, check appropriate options. This will toggle the ending tag key from Space to Enter
 
    ![Space in tags](/images/wallabagger/opt-spaceintags.png)
 
 ### Security warning
 
-In this version of extension your password is stored in browser local storage in plain text and can be retrieved by abuser. Password encryption will be implemented in future versions.
+In this version of the extension your password is stored in the browser local storage as a plain text and could be retrieved by anyone with access to your computer. The password encryption will be implemented in future versions.
 
 
 ## Usage
 
 ### Saving article
 
-After installation and successful setup you can add current opened article to wallabag by clicking on wallabagger extension icon
+After installation and successful setup you can add articles to wallabag by clicking on the Wallabagger extension icon
+
 
    ![icon](/images/wallabagger/use-icon.png)
 
@@ -105,7 +106,7 @@ wait a couple of seconds
 
    ![Saving](/images/wallabagger/use-saving.png)
 
-(There also may be message "Obtaining wallabag api token" if application token is expired (one time in two weeks))
+(There also may be message "Obtaining wallabag api token" if the application token is expired (once in two weeks))
 If something goes wrong, an error message appears:
 
    ![Error](/images/wallabagger/use-error.png)
@@ -121,21 +122,21 @@ If there was no errors, main window with saved article appears. Note: if the art
 The article window consists from:
 
 - the article picture
-- the title - clicking by it opens article in wallabag interface
+- the title - clicking it opens article in the wallabag interface
 
 ![Title](/images/wallabagger/use-title.png)
 
-- domain name - clicking by it opens source article
+- domain name - clicking it opens source article
 
 ![Domain](/images/wallabagger/use-domain.png)
 
 - icons:
-  - edit title icon ![Edit icon](images/use-editicon.png) clicking opens edit title dialog
+  - edit title icon ![Edit icon](images/use-editicon.png) clicking it opens dialog to edit the title
 
    ![Edit title](/images/wallabagger/use-edittitle.png)
 
-  - set archived and starred flags icons ![Flags icons](/images/Wallabagger/use-flagsicons.png) These icon changes its appearing when flags is set ![Flags is set](/images/wallabagger/use-flagsset.png)
-  - delete article icon ![Delete icon](/images/wallabag/use-deleteicon.png) clicking opens delete confirmation dialog
+  - set archived and starred flags icons ![Flags icons](/images/Wallabagger/use-flagsicons.png) These icons change its appeareance when the flags are set ![Flags is set](/images/wallabagger/use-flagsset.png)
+  - delete article icon ![Delete icon](/images/wallabag/use-deleteicon.png) clicking it opens a confirmation dialog  to make sure you want to delete your article
 
    ![Delete dialog](/images/wallabagger/use-deletedialog.png)
 
@@ -145,12 +146,12 @@ The article window consists from:
 
 ### Working with tags
 
-Tags, assosiated with the article appears in tags area before input field. You can delete tag from the article by clicking on the cross on the tag.
+Tags applied to the article appear in the tags area before the input field. You can remove a tag from an article by clicking on the cross symbol next to the tag.
 
    ![Article tags](/images/wallabagger/use-articletags.png)
 
-When you type name of new tag in the input field, after three letter, begins searching in existing tags, found tags appears on the bottom of input field. You can add it by clicking on it or by pressing right arrow key.
+When you type the name of a new tag in the input field, after three letters, Wallabagger begins to search in existing tags. Found tags appear on the bottom of the input field. You can add them by clicking on them or by pressing the right arrow key.
 
    ![Found tag](/images/wallabagger/use-foundtag.png)
 
-You can add typed in input field tag by pressing ",", ";", space key (if you not choose option "Use space in tags" in settings) or enter key (if you choose option "Use space in tags" in settings)
+You can add typed in input field tag by pressing ",", ";" or the Space key (if you didn't checked the option "Use space in tags" inside the extension settings) or the Enter key (if you checked the option)
