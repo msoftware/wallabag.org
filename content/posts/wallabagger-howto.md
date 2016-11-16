@@ -114,7 +114,7 @@ If something goes wrong, an error message appears:
 
 In that case, check your options.
 
-If there was no errors, main window with saved article appears. Note: if the article from this URL was already saved, that article will appear with its tags, title, and flags (starred, archived).
+If there was no errors, main window with saved article appears. Note: if the article from this URL was already saved, this article will appear with its tags, title, and flags (starred, archived).
 
 ![Article](/images/wallabagger/use-article.png)
 
