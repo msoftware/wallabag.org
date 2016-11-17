@@ -129,9 +129,9 @@ wget http://wllbg.org/latest && unzip latest
   <div class="col-lg-6">
       <div class="panel panel-default">
         <div class="panel-body">
-          <i class="fa fa-apple fa-lg"></i> <strong>[iPhone](https://itunes.apple.com/app/wallabag/id828331015?mt=8)</strong>  
+          <i class="fa fa-apple fa-lg"></i> <strong>[iPhone](https://appsto.re/fr/YeqYfb.i)</strong>  
         </div>
-        <div class="panel-footer">Developed by Kevin Meyer.  
+        <div class="panel-footer">Developed by Maxime Marinel.  
         *[source code](https://github.com/wallabag/ios-app)*</div>
       </div>
   </div>
