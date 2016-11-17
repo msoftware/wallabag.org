@@ -55,20 +55,20 @@ wget http://wllbg.org/latest && unzip latest
   <div class="col-lg-4">
       <div class="panel panel-default">
         <div class="panel-body">
-          <i class="fa fa-firefox fa-lg"></i> <strong>[Firefox](https://addons.mozilla.org/firefox/addon/wallabag-v2/)</strong>  
+          <i class="fa fa-firefox fa-lg"></i> <strong>[Firefox](https://addons.mozilla.org/firefox/addon/wallabag-v2/)</strong>
           <small>for wallabag v2 only</small>
         </div>
-        <div class="panel-footer">Developed by Thibaud Dauce.  
+        <div class="panel-footer">Developed by Thibaud Dauce.
         *[source code](https://github.com/ThibaudDauce/wallabag-firefox)*</div>
       </div>
   </div>
   <div class="col-lg-4">
       <div class="panel panel-default">
         <div class="panel-body">
-          <i class="fa fa-firefox fa-lg"></i> <strong>[Firefox](https://addons.mozilla.org/firefox/addon/wallabag/)</strong>  
+          <i class="fa fa-firefox fa-lg"></i> <strong>[Firefox](https://addons.mozilla.org/firefox/addon/wallabag/)</strong>
           <small>for wallabag v1 only</small>
         </div>
-        <div class="panel-footer">Developed by Jonathan Gaulupeau.  
+        <div class="panel-footer">Developed by Jonathan Gaulupeau.
         *[source code](https://github.com/wallabag/firefox-ext)*</div>
       </div>
   </div>
@@ -77,7 +77,7 @@ wget http://wllbg.org/latest && unzip latest
         <div class="panel-body">
           <i class="fa fa-chrome fa-lg"></i> <strong>[Chrome](https://chrome.google.com/webstore/detail/wallabag/bepdcjnnkglfjehplaogpoonpffbdcdj)</strong>
         </div>
-        <div class="panel-footer">Developed by Jonathan Gaulupeau.  
+        <div class="panel-footer">Developed by Jonathan Gaulupeau.
         *[source code](https://github.com/wallabag/chrome-ext)*</div>
       </div>
   </div>
@@ -89,49 +89,60 @@ wget http://wllbg.org/latest && unzip latest
         <div class="panel-body">
           <i class="fa fa-firefox fa-lg"></i> <strong>[Firefox OS](https://github.com/wallabag/wallabag-fxos)</strong>
         </div>
-        <div class="panel-footer">Developed by freddyb.  
+        <div class="panel-footer">Developed by freddyb.
         *[source code](https://github.com/wallabag/wallabag-fxos)*</div>
       </div>
   </div>
   <div class="col-lg-4">
       <div class="panel panel-default">
         <div class="panel-body">
-          <i class="fa fa-android fa-lg"></i> <strong>Android</strong>  
-  		  <small>[Google Play Store](https://play.google.com/store/apps/details?id=fr.gaulupeau.apps.InThePoche) or [F-droid](https://f-droid.org/app/fr.gaulupeau.apps.InThePoche)</small>
+          <i class="fa fa-android fa-lg"></i> <strong>Android</strong>
+        <small>[Google Play Store](https://play.google.com/store/apps/details?id=fr.gaulupeau.apps.InThePoche) or [F-droid](https://f-droid.org/app/fr.gaulupeau.apps.InThePoche)</small>
         </div>
-        <div class="panel-footer">Developed by Jonathan Gaulupeau.  
+        <div class="panel-footer">Developed by Jonathan Gaulupeau.
         *[source code](https://github.com/wallabag/android-app)*</div>
       </div>
   </div>
   <div class="col-lg-4">
       <div class="panel panel-default">
         <div class="panel-body">
-          <i class="fa fa-windows fa-lg"></i> <strong>[Windows Phone](http://apps.microsoft.com/windows/app/wallabag/f551b9c4-7346-4509-ae46-c6167c705a30)</strong>  
+          <i class="fa fa-windows fa-lg"></i> <strong>[Windows Phone](http://apps.microsoft.com/windows/app/wallabag/f551b9c4-7346-4509-ae46-c6167c705a30)</strong>
           <small>for wallabag v2 only</small>
         </div>
-        <div class="panel-footer">Developed by Julian Oster.  
+        <div class="panel-footer">Developed by Julian Oster.
         *[source code](https://github.com/wallabag/windows-app)*</div>
       </div>
   </div>
 </div>
 
 <div class="col-lg-12" markdown="1">
-  <div class="col-lg-6">
+  <div class="col-lg-4">
       <div class="panel panel-default">
         <div class="panel-body">
-          <i class="fa fa-windows fa-lg"></i> <strong>[Windows Phone](http://apps.microsoft.com/windows/app/wallabag/f551b9c4-7346-4509-ae46-c6167c705a30)</strong>  
+          <i class="fa fa-windows fa-lg"></i> <strong>[Windows Phone](http://apps.microsoft.com/windows/app/wallabag/f551b9c4-7346-4509-ae46-c6167c705a30)</strong>
           <small>for wallabag v1 only</small>
         </div>
-        <div class="panel-footer">Developed by Julian Oster.  
+        <div class="panel-footer">Developed by Julian Oster.
         *[source code](https://github.com/wallabag/windows-app/tree/master)*</div>
       </div>
   </div>
-  <div class="col-lg-6">
+  <div class="col-lg-4">
       <div class="panel panel-default">
         <div class="panel-body">
-          <i class="fa fa-apple fa-lg"></i> <strong>[iPhone](https://itunes.apple.com/app/wallabag/id828331015?mt=8)</strong>  
+          <i class="fa fa-apple fa-lg"></i> <strong>[iPhone](https://itunes.apple.com/app/wallabag/id828331015?mt=8)</strong>
+          <small>for wallabag v1 only</small>
         </div>
-        <div class="panel-footer">Developed by Kevin Meyer.  
+        <div class="panel-footer">Developed by Kevin Meyer.
+        *[source code](https://github.com/wallabag/ios-app-v1)*</div>
+      </div>
+  </div>
+  <div class="col-lg-4">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <i class="fa fa-apple fa-lg"></i> <strong>[iPhone](https://appsto.re/fr/YeqYfb.i)</strong>
+          <small>for wallabag v2 only</small>
+        </div>
+        <div class="panel-footer">Developed by Maxime Marinel.
         *[source code](https://github.com/wallabag/ios-app)*</div>
       </div>
   </div>
