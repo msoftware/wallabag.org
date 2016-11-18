@@ -17,6 +17,8 @@ Please don't use old releases, or you will find less support and they may contai
   </thead>
   <tbody>
     <tr class="success">
+      <td>2.1.4</td><td>2016-11-18</td><td>[blog post](https://www.wallabag.org/blog/2016/11/18/wallabag-214)</td></tr>
+    <tr>
       <td>2.1.3</td><td>2016-11-04</td><td>[blog post](https://www.wallabag.org/blog/2016/11/04/wallabag-213)</td></tr>
     <tr>
       <td>2.1.2</td><td>2016-10-17</td><td>[blog post](https://www.wallabag.org/blog/2016/10/17/wallabag-212)</td></tr>
