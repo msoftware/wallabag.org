@@ -137,11 +137,11 @@ The article window consists from:
 ![Domain](/images/wallabagger/use-domain.png)
 
 - icons:
-  - edit title icon ![Edit icon](images/use-editicon.png) clicking it opens dialog to edit the title
+  - edit title icon ![Edit icon](/images/use-editicon.png) clicking it opens dialog to edit the title
 
    ![Edit title](/images/wallabagger/use-edittitle.png)
 
-  - set archived and starred flags icons ![Flags icons](/images/Wallabagger/use-flagsicons.png) These icons change its appeareance when the flags are set ![Flags is set](/images/wallabagger/use-flagsset.png)
+  - set archived and starred flags icons ![Flags icons](/images/wallabagger/use-flagsicons.png) These icons change its appeareance when the flags are set ![Flags is set](/images/wallabagger/use-flagsset.png)
   - delete article icon ![Delete icon](/images/wallabagger/use-deleteicon.png) clicking it opens a confirmation dialog  to make sure you want to delete your article
 
    ![Delete dialog](/images/wallabagger/use-deletedialog.png)
