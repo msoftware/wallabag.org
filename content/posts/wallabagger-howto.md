@@ -3,7 +3,12 @@ slug: wallabagger-howto
 title: Wallabagger howto
 tags: wallabagger
 
-# Wallabagger howto
+If you want to add articles in your wallabag account, you can use the classc form. You can also install browser extensions.  
+Yuriy Evdokimov ([@Rurik19](https://github.com/Rurik19)) developed the new Chrome addon which supports wallabag v2.
+
+Here is the howto for this addon. Thank you Yuriy! 
+
+## Wallabagger howto
 
 Wallabagger is a chrome extension to add pages to wallabag, with the ability to:
 
@@ -13,12 +18,12 @@ Wallabagger is a chrome extension to add pages to wallabag, with the ability to:
 - set starred and archived
 - delete
 
-## Requirements
+### Requirements
 
 - wallabag v2 on server side.
-- Chromium-based browser (Crome, Opera, Yandex, Vivaldi, etc.)
+- Chromium-based browser (Chrome, Opera, Yandex, Vivaldi, etc.)
 
-## Installation
+### Installation
 
 You can install Wallabagger from these ways:
 
@@ -47,7 +52,7 @@ You can install Wallabagger from these ways:
   - Drag wallabagger.crx to this page
 
 
-## Options
+### Options
 
 First of all you have to create a new client on your wallabag installation. How to do that is described in [Documentation](http://doc.wallabag.org/en/master/developer/api.html#creating-a-new-api-client)
 
@@ -55,7 +60,7 @@ What we need from that client is two strings: Client ID and Client secret.
 
    ![Client](/images/wallabagger/opt-client.png)
 
-### Access options page
+#### Access options page
 
 After the installation of Wallabagger extension you can setup it by going to the options page. This page is accessible by
 
@@ -67,7 +72,7 @@ After the installation of Wallabagger extension you can setup it by going to the
 
    ![extensions](/images/wallabagger/opt-ext-optlink.png)
 
-### Setup process
+#### Setup process
 
 - Enter the URL of your wallabag installation (without "http://" ), check "https" if you use that, and click "Check URL" button
 
@@ -89,14 +94,14 @@ After the installation of Wallabagger extension you can setup it by going to the
 
    ![Space in tags](/images/wallabagger/opt-spaceintags.png)
 
-### Security warning
+#### Security warning
 
 In this version of the extension your password is stored in the browser local storage as a plain text and could be retrieved by anyone with access to your computer. The password encryption will be implemented in future versions.
 
 
-## Usage
+### Usage
 
-### Saving article
+#### Saving article
 
 After installation and successful setup you can add articles to wallabag by clicking on the Wallabagger extension icon
 
@@ -118,7 +123,7 @@ If there was no errors, main window with saved article appears. Note: if the art
 
 ![Article](/images/wallabagger/use-article.png)
 
-### Article window
+#### Article window
 
 The article window consists from:
 
@@ -145,7 +150,7 @@ The article window consists from:
 
    ![Tags area](/images/wallabagger/use-tagsarea.png)
 
-### Working with tags
+#### Working with tags
 
 Tags applied to the article appear in the tags area before the input field. You can remove a tag from an article by clicking on the cross symbol next to the tag.
 
