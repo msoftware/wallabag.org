@@ -137,7 +137,7 @@ The article window consists from:
 ![Domain](/images/wallabagger/use-domain.png)
 
 - icons:
-  - edit title icon ![Edit icon](/images/use-editicon.png) clicking it opens dialog to edit the title
+  - edit title icon ![Edit icon](/images/wallabagger/use-editicon.png) clicking it opens dialog to edit the title
 
    ![Edit title](/images/wallabagger/use-edittitle.png)
 
