@@ -1,6 +1,6 @@
-date: 2016-11-15 08:00:00+00:00
+date: 2016-11-18 09:30:00+00:00
 slug: wallabagger-howto
-title: Wallabagger howto
+title: Presentation of our new Chrome addon, by Rurik19
 tags: wallabagger
 
 If you want to add articles in your wallabag account, you can use the classc form. You can also install browser extensions.  
