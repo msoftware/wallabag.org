@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en"
+>
+<head>
+    <title>[Release] wallabag 2.1, best version since 2.0.0 - wallabag: a self hostable application for saving web pages</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://www.wallabag.org/images/favicon.ico" rel="icon">
+
+<link rel="canonical" href="https://www.wallabag.org/blog/2016/10/03/wallabag-21">
+
+        <meta name="author" content="Nicolas Lœuillet" />
+        <meta name="keywords" content="v2,release" />
+        <meta name="description" content="Six months ago, we released wallabag 2.0. And exactly 3 years ago, we launched wallabag 1.0. A big step in our short life: we rewrote the whole application to propose to you many great features. And it was also easier for us to develop with the help of the Symfony framework. Since this release, we&#39;ve worked on fixes (we released 8 patches) and we developed many new features for wallabag 2.1. Now, it&#39;s time to take a look at these new features! Import from ... The recent news (Instapaper is joining Pinterest, The Readability bookmarking service will shut down on September 30, 2016) in the read-it-later ecosystem encouraged us to change our roadmap. We planned to work on the Tags feature for this 2.1 version but we worked hard on importing your data from 3rd-party services (but we&#39;ve also made a few changes on the tags feature !). ... Readability At the end of August, Readability announced that its general public service will shut down on September 30. One day after this announce, j0k3r developed a Readability import. It&#39;s easy to use, you just need to select your Readability export on your computer and import it. Feature developed by j0k3r in #2255 ... Instapaper The Instapaper service will not shut down (at least not right now), but it has been acquired by Pinterest. If you think that it&#39;s time to migrate to wallabag, our new importer is for you. Feature developed by j0k3r in #2310 ... Firefox and Chrome In your favorite browser, you can save bookmarks, thousands of bookmarks. Now, you can also import them into wallabag. It&#39;s a just a file to export from your browser and import into your wallabag interface. Feature developed by tcitworld in #2192 Asynchronous import will save your life (and your server!) OK, you can import thousand of articles, but your web server can&#39;t process so much data: you&#39;ll most probably end up with a timeout error if you try to import too many articles. This problem exists in wallabag for years. That&#39;s why we worked on a system to fetch content and import articles into wallabag asynchronously: you ask wallabag to import your articles, wallabag saves all the URLs of these articles and then, a queue system fetches content while you&#39;re using wallabag. In order to use this feature, wallabag needs Redis or RabbitMQ. The wallabag documentation explains how to configure these services. Beware : these services will certainly not be available if you use shared hosting. Feature developed by j0k3r and nicosomb in #1941 You can finally manage your users You can now easily create, delete or edit an account in your wallabag instance.As an administrator of wallabag, you&#39;ll have a new interface, available in the menu: Users management. Feature developed by j0k3r in #2327 You like an article? Share it with your friends! This feature was claimed for months (on 2 August, 2013!). You can now share an article publicly: by clicking on the share menu in the sidebar of the article, you can generate a public link and share it on your favorite social network!Like inside your wallabag, the article is displayed in a comfortable view. Feature developed by nicosomb in #1904 One more thing... Dmitriy Bogdanov (@di72nn) worked really hard on the Android app and came out with the following new features : A background service It handles offline actions, like saving an article offline, marking an article as read, favoriting it or deleting it. These actions are then executed when it&#39;s possible. Automatic sync You can sync local changes and download eventual new articles on a defined schedule. Local changes can also be synched as soon as the network is available. Finally, it&#39;s possible to download an article you just added. A new connection wizard It helps you connecting to your wallabag instance. Just choose your instance or define its address, put it your credentials, and the wizard will automatically fetch connection informations. Notifications ! You get notifications when the app is syncing, and when an error occurs. A proper preferences screen We got rid of the old ugly screen. Every option is saved when you change it. Full changelog Added #1990 Added command line import for wallabag files (Nicolas Lœuillet) #2142 Manage assets through npm (Thomas Citharel) #2174 Added filter for tags on API (Thomas Citharel) #2176 Added since parameter in API (Thomas Citharel) #2170, #2183 Added tags on entries view (Thomas Citharel) #2186 Added option to disable registration (Thomas Citharel) #1904 Share entry with a public URL (Nicolas Lœuillet) #2243 Added list of untagged articles (Nicolas Lœuillet) #2255 Added Readability import (Jeremy Benoist) #2002 Added articles counter in sidebar (Nicolas Lœuillet) #2275 Added date from entries in export (Jeremy Benoist) #2266 Added tags counter in sidebar (Nicolas Lœuillet) #1941 Added asynchronous import (Jeremy Benoist, Nicolas Lœuillet) #2192 Added Firefox / Chrome bookmarks import (Thomas Citharel) #2310 Added Instapaper import (Jeremy Benoist) #2322 Added customized errors templates (Jeremy Benoist) #2323 Added simple stats in footer (Jeremy Benoist) #2324 Added ability to edit a tagging rule (Jeremy Benoist) #2325 Added an exists endpoint in API (Jeremy Benoist) Changed #2170 Entry titles are now smaller on entry view (Thomas Citharel) #2245 Changed where page title is displayed (Nicolas Lœuillet) #2274 Re use JsonResponse in API (Jeremy Benoist) #2257 Use created date for imported content (Jeremy Benoist) #2326 Quickstart layout (Nicolas Lœuillet) Fixed #2328 Fixed duplicate URL with accents (Jeremy Benoist) #2319 Fixed gd extension missing in Dockerfile (Pascal Martin) #2313 Fixed long loading on Firefox (Nicolas Lœuillet) #2320 Fixed user config which wasn&#39;t created in some cases (Jeremy Benoist) #2301 Fixed feeds not syncing on android application (Thomas Citharel) #2308 Fixed duplicate tags on import (Jeremy Benoist) #2297 Fixed epub export with special characters in title (morhelluin) #2292 Fixed label for mark as read link in entry view (Nicolas Lœuillet) #2260 Fixed different font-size for labels in config screen (Nicolas Lœuillet) #2242 Fixed print / article views (Nicolas Lœuillet) #2328 Avoid duplicate url with accents (Jeremy Benoist) #2330 Remove error message when creating ePub versions (Paulino Michelazzo) #2331 Fix parameters in API links (Jeremy Benoist) Removed #2318 Removed duplicated templates files (Nicolas Lœuillet) #2287 Useless area in footer for material theme (Nicolas Lœuillet) Download wallabag 2.1 To download, install/upgrade wallabag, please read our Downloads page. Need help? We are on Gitter (a chat platform), ping us! You can also open a new issue on GitHub. How can you help us? By using wallabag, by reporting bugs, by translating wallabag and its documentation, by talking about wallabag to your friends, ... Finally, don&#39;t forget that you can also support us via Paypal, Flattr, Gratipay or Bountysource." />
+
+        <meta property="og:site_name" content="wallabag: a self hostable application for saving web pages" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="[Release] wallabag 2.1, best version since 2.0.0"/>
+        <meta property="og:url" content="https://www.wallabag.org/blog/2016/10/03/wallabag-21"/>
+        <meta property="og:description" content="Six months ago, we released wallabag 2.0. And exactly 3 years ago, we launched wallabag 1.0. A big step in our short life: we rewrote the whole application to propose to you many great features. And it was also easier for us to develop with the help of the Symfony framework. Since this release, we&#39;ve worked on fixes (we released 8 patches) and we developed many new features for wallabag 2.1. Now, it&#39;s time to take a look at these new features! Import from ... The recent news (Instapaper is joining Pinterest, The Readability bookmarking service will shut down on September 30, 2016) in the read-it-later ecosystem encouraged us to change our roadmap. We planned to work on the Tags feature for this 2.1 version but we worked hard on importing your data from 3rd-party services (but we&#39;ve also made a few changes on the tags feature !). ... Readability At the end of August, Readability announced that its general public service will shut down on September 30. One day after this announce, j0k3r developed a Readability import. It&#39;s easy to use, you just need to select your Readability export on your computer and import it. Feature developed by j0k3r in #2255 ... Instapaper The Instapaper service will not shut down (at least not right now), but it has been acquired by Pinterest. If you think that it&#39;s time to migrate to wallabag, our new importer is for you. Feature developed by j0k3r in #2310 ... Firefox and Chrome In your favorite browser, you can save bookmarks, thousands of bookmarks. Now, you can also import them into wallabag. It&#39;s a just a file to export from your browser and import into your wallabag interface. Feature developed by tcitworld in #2192 Asynchronous import will save your life (and your server!) OK, you can import thousand of articles, but your web server can&#39;t process so much data: you&#39;ll most probably end up with a timeout error if you try to import too many articles. This problem exists in wallabag for years. That&#39;s why we worked on a system to fetch content and import articles into wallabag asynchronously: you ask wallabag to import your articles, wallabag saves all the URLs of these articles and then, a queue system fetches content while you&#39;re using wallabag. In order to use this feature, wallabag needs Redis or RabbitMQ. The wallabag documentation explains how to configure these services. Beware : these services will certainly not be available if you use shared hosting. Feature developed by j0k3r and nicosomb in #1941 You can finally manage your users You can now easily create, delete or edit an account in your wallabag instance.As an administrator of wallabag, you&#39;ll have a new interface, available in the menu: Users management. Feature developed by j0k3r in #2327 You like an article? Share it with your friends! This feature was claimed for months (on 2 August, 2013!). You can now share an article publicly: by clicking on the share menu in the sidebar of the article, you can generate a public link and share it on your favorite social network!Like inside your wallabag, the article is displayed in a comfortable view. Feature developed by nicosomb in #1904 One more thing... Dmitriy Bogdanov (@di72nn) worked really hard on the Android app and came out with the following new features : A background service It handles offline actions, like saving an article offline, marking an article as read, favoriting it or deleting it. These actions are then executed when it&#39;s possible. Automatic sync You can sync local changes and download eventual new articles on a defined schedule. Local changes can also be synched as soon as the network is available. Finally, it&#39;s possible to download an article you just added. A new connection wizard It helps you connecting to your wallabag instance. Just choose your instance or define its address, put it your credentials, and the wizard will automatically fetch connection informations. Notifications ! You get notifications when the app is syncing, and when an error occurs. A proper preferences screen We got rid of the old ugly screen. Every option is saved when you change it. Full changelog Added #1990 Added command line import for wallabag files (Nicolas Lœuillet) #2142 Manage assets through npm (Thomas Citharel) #2174 Added filter for tags on API (Thomas Citharel) #2176 Added since parameter in API (Thomas Citharel) #2170, #2183 Added tags on entries view (Thomas Citharel) #2186 Added option to disable registration (Thomas Citharel) #1904 Share entry with a public URL (Nicolas Lœuillet) #2243 Added list of untagged articles (Nicolas Lœuillet) #2255 Added Readability import (Jeremy Benoist) #2002 Added articles counter in sidebar (Nicolas Lœuillet) #2275 Added date from entries in export (Jeremy Benoist) #2266 Added tags counter in sidebar (Nicolas Lœuillet) #1941 Added asynchronous import (Jeremy Benoist, Nicolas Lœuillet) #2192 Added Firefox / Chrome bookmarks import (Thomas Citharel) #2310 Added Instapaper import (Jeremy Benoist) #2322 Added customized errors templates (Jeremy Benoist) #2323 Added simple stats in footer (Jeremy Benoist) #2324 Added ability to edit a tagging rule (Jeremy Benoist) #2325 Added an exists endpoint in API (Jeremy Benoist) Changed #2170 Entry titles are now smaller on entry view (Thomas Citharel) #2245 Changed where page title is displayed (Nicolas Lœuillet) #2274 Re use JsonResponse in API (Jeremy Benoist) #2257 Use created date for imported content (Jeremy Benoist) #2326 Quickstart layout (Nicolas Lœuillet) Fixed #2328 Fixed duplicate URL with accents (Jeremy Benoist) #2319 Fixed gd extension missing in Dockerfile (Pascal Martin) #2313 Fixed long loading on Firefox (Nicolas Lœuillet) #2320 Fixed user config which wasn&#39;t created in some cases (Jeremy Benoist) #2301 Fixed feeds not syncing on android application (Thomas Citharel) #2308 Fixed duplicate tags on import (Jeremy Benoist) #2297 Fixed epub export with special characters in title (morhelluin) #2292 Fixed label for mark as read link in entry view (Nicolas Lœuillet) #2260 Fixed different font-size for labels in config screen (Nicolas Lœuillet) #2242 Fixed print / article views (Nicolas Lœuillet) #2328 Avoid duplicate url with accents (Jeremy Benoist) #2330 Remove error message when creating ePub versions (Paulino Michelazzo) #2331 Fix parameters in API links (Jeremy Benoist) Removed #2318 Removed duplicated templates files (Nicolas Lœuillet) #2287 Useless area in footer for material theme (Nicolas Lœuillet) Download wallabag 2.1 To download, install/upgrade wallabag, please read our Downloads page. Need help? We are on Gitter (a chat platform), ping us! You can also open a new issue on GitHub. How can you help us? By using wallabag, by reporting bugs, by translating wallabag and its documentation, by talking about wallabag to your friends, ... Finally, don&#39;t forget that you can also support us via Paypal, Flattr, Gratipay or Bountysource."/>
+        <meta property="article:published_time" content="2016-10-03" />
+            <meta property="article:section" content="posts" />
+            <meta property="article:tag" content="v2" />
+            <meta property="article:tag" content="release" />
+            <meta property="article:author" content="Nicolas Lœuillet" />
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://www.wallabag.org/theme/css/bootstrap.cosmo.min.css" type="text/css"/>
+    <link href="https://www.wallabag.org/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="https://www.wallabag.org/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.wallabag.org/theme/css/style.css" type="text/css"/>
+        <link href="https://www.wallabag.org/extra/css/custom.css" rel="stylesheet">
+
+        <link href="https://www.wallabag.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="wallabag: a self hostable application for saving web pages ATOM Feed"/>
+
+</head>
+<body>
+  <div class="gitter-chat-embed" style="display:none; "></div>
+  <script>
+      ((window.gitter = {}).chat = {}).options = {
+          room: 'wallabag/wallabag',
+          showChatByDefault: false
+      };
+  </script>
+  <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/" title="Homepage">
+                <img src="/images/logo-navbar.png" />
+                </a></li>
+                         <li><a href="https://www.wallabag.org/pages/features-screenshots.html">
+                             Features
+                          </a></li>
+                         <li><a href="https://www.wallabag.org/pages/download-wallabag.html">
+                             Downloads
+                          </a></li>
+                         <li><a href="http://doc.wallabag.org/en/master/">
+                             Documentation
+                          </a></li>
+                         <li><a href="https://www.wallabag.org/pages/donations.html">
+                             Donations
+                          </a></li>
+                         <li><a href="https://www.wallabag.org/pages/support.html">
+                             Support
+                          </a></li>
+                         <li><a href="/blog_index.html">
+                             Blog
+                          </a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+
+
+    <section id="content">
+        <article>
+            <header>
+                <h1>
+                    <a href="https://www.wallabag.org/blog/2016/10/03/wallabag-21"
+                       rel="bookmark"
+                       title="Permalink to [Release] wallabag 2.1, best version since 2.0.0">
+                        [Release] wallabag 2.1, best version since 2.0.0
+                    </a>
+                </h1>
+            </header>
+            <article>
+                <div class="well well-sm">
+<div class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2016-10-03T08:00:00+00:00"> Mon 03 October 2016</time>
+    </span>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="https://www.wallabag.org/tag/v2.html">v2</a>
+        /
+	<a href="https://www.wallabag.org/tag/release.html">release</a>
+
+    <span id="post-share-links">
+        <span class="label label-default">Share</span>
+        <a href="https://sharetodiaspora.github.io/?title=%5BRelease%5D%20wallabag%202.1%2C%20best%20version%20since%202.0.0&url=https%3A//www.wallabag.org/blog/2016/10/03/wallabag-21" target="_blank" title="Share on Diaspora">Diaspora*</a>
+        ❄
+        <a href="http://twitter.com/home?status=%5BRelease%5D%20wallabag%202.1%2C%20best%20version%20since%202.0.0%20https%3A//www.wallabag.org/blog/2016/10/03/wallabag-21" target="_blank" title="Share on Twitter">Twitter</a>
+        ❄
+        <a href="http://www.facebook.com/sharer/sharer.php?u=https%3A//www.wallabag.org/blog/2016/10/03/wallabag-21" target="_blank" title="Share on Facebook">Facebook</a>
+        ❄
+        <a href="mailto:?subject=%5BRelease%5D%20wallabag%202.1%2C%20best%20version%20since%202.0.0&amp;body=https%3A//www.wallabag.org/blog/2016/10/03/wallabag-21" title="Share via Email">Email</a>
+    </span>
+
+    
+</div><!-- /.post-info -->
+                </div>
+                <div class="content">
+                <p><a href="https://www.wallabag.org/blog/2016/04/03/wallabag-v2">Six months ago, we released wallabag 2.0</a>. <a href="https://www.wallabag.org/blog/2013/10/03/117">And exactly 3 years ago</a>, we launched wallabag 1.0. A big step in our short life: we rewrote the whole application to propose to you many great features. And it was also easier for us to develop with the help of the Symfony framework.</p>
+<p>Since this release, we've worked on fixes (we <a href="https://www.wallabag.org/pages/releases.html">released 8 patches</a>) and we developed many new features for wallabag 2.1.</p>
+<p>Now, it's time to take a look at these new features!</p>
+<div style="text-align:center;">
+    <img src="/images/wllbg21/gif.gif" alt="It's a wallaby!" class="mt21" />
+</div>
+
+<hr />
+
+<h2>Import from ...</h2>
+<p>The recent news (<a href="http://blog.instapaper.com/post/149374303661">Instapaper is joining Pinterest</a>, <a href="https://medium.com/@readability/the-readability-bookmarking-service-will-shut-down-on-september-30-2016-1641cc18e02b#.jzcn686qt">The Readability bookmarking service will shut down on September 30, 2016</a>) in the read-it-later ecosystem encouraged us to change our roadmap. We planned to work on the Tags feature for this 2.1 version but we worked hard on importing your data from 3rd-party services (but we've also made a few changes on the tags feature !).</p>
+<div class="row">
+  <div class="col-lg-6">
+    <img src="/images/wllbg21/readability_import.png" alt="Readability import" class="mt21" />
+  </div>
+  <div class="col-lg-6">
+    <h3>... Readability</h3>
+    <p>At the end of August, Readability announced that its general public service will shut down on September 30. One day after this announce, j0k3r developed a Readability import. It's easy to use, you just need to select your Readability export on your computer and import it.</p>
+    <p><em>Feature developed by <a href="https://github.com/j0k3r">j0k3r</a> in <a href="https://github.com/wallabag/wallabag/pull/2255">#2255</a></em></p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-6">
+    <h3>... Instapaper</h3>
+    <p>The Instapaper service will not shut down (at least not right now), but it has been acquired by Pinterest. If you think that it's time to migrate to wallabag, our new importer is for you.</p>
+    <p><em>Feature developed by <a href="https://github.com/j0k3r">j0k3r</a> in <a href="https://github.com/wallabag/wallabag/pull/2310">#2310</a></em></p>
+  </div>
+  <div class="col-lg-6" style="text-align:center">
+    <img src="/images/wllbg21/instapaper_import.png" alt="Instapaper import" class="mt21" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-6">
+    <img src="/images/wllbg21/firefox_chrome.png" alt="Firefox and Chrome import" class="mt21" />
+  </div>
+  <div class="col-lg-6">
+    <h3>... Firefox and Chrome</h3>
+    <p>In your favorite browser, you can save bookmarks, thousands of bookmarks. Now, you can also import them into wallabag. It's a just a file to export from your browser and import into your wallabag interface.</p>
+    <p><em>Feature developed by <a href="https://github.com/tcitworld">tcitworld</a> in <a href="https://github.com/wallabag/wallabag/pull/2192">#2192</a></em></p>
+  </div>
+</div>
+
+<hr />
+
+<h2>Asynchronous import will save your life (and your server!)</h2>
+<p>OK, you can import thousand of articles, but your web server can't process so much data: you'll most probably end up with a timeout error if you try to import too many articles.</p>
+<p><a href="https://github.com/wallabag/wallabag/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20import%20fail%20is%3Aclosed%20">This problem exists in wallabag for years</a>.</p>
+<p>That's why we worked on a system to fetch content and import articles into wallabag asynchronously: you ask wallabag to import your articles, wallabag saves all the URLs of these articles and then, a queue system fetches content while you're using wallabag.</p>
+<p>In order to use this feature, wallabag needs <a href="http://redis.io/">Redis</a> or <a href="https://www.rabbitmq.com/">RabbitMQ</a>. The wallabag documentation explains how to configure these services.</p>
+<p>Beware : these services will certainly not be available if you use shared hosting.</p>
+<p><em>Feature developed by <a href="https://github.com/j0k3r">j0k3r</a> and <a href="https://github.com/nicosomb">nicosomb</a> in <a href="https://github.com/wallabag/wallabag/pull/1941">#1941</a></em></p>
+
+<hr />
+
+<div class="row">
+  <div class="col-lg-6">
+    <img src="/images/wllbg21/manage_users.png" alt="You can finally manage your users" class="mt21" />
+  </div>
+  <div class="col-lg-6">
+    <h2>You can finally manage your users</h2>
+    <p>You can now easily create, delete or edit an account in your wallabag instance.<br />As an administrator of wallabag, you'll have a new interface, available in the menu: <strong>Users management</strong>.</p>
+    <p><em>Feature developed by <a href="https://github.com/j0k3r">j0k3r</a> in <a href="https://github.com/wallabag/wallabag/pull/2327">#2327</a></em></p>
+  </div>
+</div>
+
+<hr />
+
+<div class="row">
+  <div class="col-lg-6">
+    <h2>You like an article? Share it with your friends!</h2>
+    <p>This feature was claimed for months (<a href="https://github.com/wallabag/wallabag/issues/95">on 2 August, 2013!</a>). You can now share an article publicly: by clicking on the share menu in the sidebar of the article, you can generate a public link and share it on your favorite social network!<br />Like inside your wallabag, the article is displayed in a comfortable view.</p>
+    <p><em>Feature developed by <a href="https://github.com/nicosomb">nicosomb</a> in <a href="https://github.com/wallabag/wallabag/pull/1904">#1904</a></em></p>
+  </div>
+  <div class="col-lg-6" style="text-align:center">
+    <img src="/images/wllbg21/share_public.png" alt="Share your articles with your friends" class="mt21" />
+  </div>
+</div>
+
+<hr />
+
+<h2>One more thing...</h2>
+<div style="float:right;"><img src="/images/wllbg21/android_sync.png" alt="Android Sync" /> <img src="/images/wllbg21/android_wizard.png" alt="Android Wizard" /></div>
+
+<p>Dmitriy Bogdanov (<a href="https://github.com/di72nn">@di72nn</a>) worked really hard on the Android app and came out with the following new features :</p>
+<h3>A background service</h3>
+<p>It handles offline actions, like saving an article offline, marking an article as read, favoriting it or deleting it. These actions are then executed when it's possible.</p>
+<h3>Automatic sync</h3>
+<p>You can sync local changes and download eventual new articles on a defined schedule. Local changes can also be synched as soon as the network is available. Finally, it's possible to download an article you just added.</p>
+<h3>A new connection wizard</h3>
+<p>It helps you connecting to your wallabag instance. Just choose your instance or define its address, put it your credentials, and the wizard will automatically fetch connection informations.</p>
+<h3>Notifications !</h3>
+<p>You get notifications when the app is syncing, and when an error occurs.</p>
+<h3>A proper preferences screen</h3>
+<p>We got rid of the old ugly screen. Every option is saved when you change it.</p>
+<hr />
+
+<h2>Full changelog</h2>
+<h3>Added</h3>
+<ul>
+<li><a href="https://github.com/wallabag/wallabag/pull/1990">#1990</a> Added command line import for wallabag files (Nicolas Lœuillet)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2142">#2142</a> Manage assets through npm (Thomas Citharel)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2174">#2174</a> Added filter for tags on API (Thomas Citharel)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2176">#2176</a> Added <code>since</code> parameter in API (Thomas Citharel)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2170">#2170</a>, <a href="https://github.com/wallabag/wallabag/pull/2183">#2183</a> Added tags on entries view (Thomas Citharel)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2186">#2186</a> Added option to disable registration (Thomas Citharel)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/1904">#1904</a> Share entry with a public URL (Nicolas Lœuillet)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2243">#2243</a> Added list of untagged articles (Nicolas Lœuillet)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2255">#2255</a> Added Readability import (Jeremy Benoist)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2002">#2002</a> Added articles counter in sidebar (Nicolas Lœuillet)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2275">#2275</a> Added date from entries in export (Jeremy Benoist)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2266">#2266</a> Added tags counter in sidebar (Nicolas Lœuillet)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/1941">#1941</a> Added asynchronous import (Jeremy Benoist, Nicolas Lœuillet)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2192">#2192</a> Added Firefox / Chrome bookmarks import (Thomas Citharel)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2310">#2310</a> Added Instapaper import (Jeremy Benoist)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2322">#2322</a> Added customized errors templates (Jeremy Benoist)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2323">#2323</a> Added simple stats in footer (Jeremy Benoist)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2324">#2324</a> Added ability to edit a tagging rule (Jeremy Benoist)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2325">#2325</a> Added an <code>exists</code> endpoint in API (Jeremy Benoist)</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li><a href="https://github.com/wallabag/wallabag/pull/2170">#2170</a> Entry titles are now smaller on entry view (Thomas Citharel)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2245">#2245</a> Changed where page title is displayed (Nicolas Lœuillet)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2274">#2274</a> Re use JsonResponse in API (Jeremy Benoist)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2257">#2257</a> Use created date for imported content (Jeremy Benoist)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2326">#2326</a> Quickstart layout (Nicolas Lœuillet)</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li><a href="https://github.com/wallabag/wallabag/pull/2328">#2328</a> Fixed duplicate URL with accents (Jeremy Benoist)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2319">#2319</a> Fixed <code>gd</code> extension missing in Dockerfile (Pascal Martin)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2313">#2313</a> Fixed long loading on Firefox (Nicolas Lœuillet)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2320">#2320</a> Fixed user config which wasn't created in some cases (Jeremy Benoist)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2301">#2301</a> Fixed feeds not syncing on android application (Thomas Citharel)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2308">#2308</a> Fixed duplicate tags on import (Jeremy Benoist)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2297">#2297</a> Fixed epub export with special characters in title (morhelluin)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2292">#2292</a> Fixed label for mark as read link in entry view (Nicolas Lœuillet)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2260">#2260</a> Fixed different font-size for labels in config screen (Nicolas Lœuillet)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2242">#2242</a> Fixed print / article views (Nicolas Lœuillet)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2328">#2328</a> Avoid duplicate url with accents (Jeremy Benoist)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2330">#2330</a> Remove error message when creating ePub versions (Paulino Michelazzo)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2331">#2331</a> Fix parameters in API links (Jeremy Benoist)</li>
+</ul>
+<h3>Removed</h3>
+<ul>
+<li><a href="https://github.com/wallabag/wallabag/pull/2318">#2318</a> Removed duplicated templates files (Nicolas Lœuillet)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2287">#2287</a> Useless area in footer for material theme (Nicolas Lœuillet)</li>
+</ul>
+<hr />
+
+<h2>Download wallabag 2.1</h2>
+<p>To download, install/upgrade wallabag, <a href="https://www.wallabag.org/pages/download-wallabag.html">please read our Downloads page</a>.</p>
+<hr />
+
+<h2>Need help?</h2>
+<p><a href="https://gitter.im/wallabag/wallabag">We are on Gitter</a> (a chat platform), ping us! You can also open a <a href="https://github.com/wallabag/wallabag/issues/new">new issue on GitHub</a>.</p>
+<hr />
+
+<h2>How can you help us?</h2>
+<p>By using wallabag, by reporting bugs, by translating wallabag and its documentation, by talking about wallabag to your friends, ...</p>
+<p>Finally, don't forget that <a href="https://www.wallabag.org/pages/donations.html">you can also support us via Paypal, Flattr, Gratipay or Bountysource</a>.</p>
+                </div>
+            </article>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+          <div class="col-xs-10">wallabag is free (as in freedom) and <a href="https://github.com/wallabag/wallabag/blob/master/COPYING.md">opensource</a>. It's made by <a href="http://www.loeuillet.org">Nicolas Lœuillet</a>, Thomas Citharel, Jérémy Benoist and many <a href="https://github.com/wallabag/wallabag/graphs/contributors">great contributors</a>.
+             <p><small>This website is powered by <a href="http://docs.getpelican.com/" target="_blank">Pelican</a> and  <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>. You can contribute to it on <a href="https://github.com/wallabag/wallabag.org">github.com/wallabag/wallabag.org</a>.</small></p>             <p><small>We are on <a href="https://twitter.com/wallabagapp">twitter</a>, <a href="https://www.facebook.com/wallabag/">facebook</a>, <a href="https://plus.google.com/+WallabagOrg">google+</a> and <a href="https://framasphere.org/people/2335ff202f920132196e2a0000053625">diaspora*</a>.</small></p>
+          </div>
+      </div>
+   </div>
+</footer>
+<script src="https://www.wallabag.org/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://www.wallabag.org/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="https://www.wallabag.org/theme/js/respond.min.js"></script>
+
+
+</body>
+</html>

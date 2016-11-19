@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en"
+>
+<head>
+    <title>posts - wallabag: a self hostable application for saving web pages</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://www.wallabag.org/images/favicon.ico" rel="icon">
+
+
+    <meta name="author" content="Nicolas Lœuillet" />
+    <meta name="keywords" content="posts" />
+
+    <!-- Open Graph tags -->
+        <meta property="og:site_name" content="wallabag: a self hostable application for saving web pages" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="wallabag: a self hostable application for saving web pages"/>
+        <meta property="og:url" content="https://www.wallabag.org"/>
+        <meta property="og:description" content="wallabag: a self hostable application for saving web pages"/>
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://www.wallabag.org/theme/css/bootstrap.cosmo.min.css" type="text/css"/>
+    <link href="https://www.wallabag.org/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="https://www.wallabag.org/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.wallabag.org/theme/css/style.css" type="text/css"/>
+        <link href="https://www.wallabag.org/extra/css/custom.css" rel="stylesheet">
+
+        <link href="https://www.wallabag.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="wallabag: a self hostable application for saving web pages ATOM Feed"/>
+
+</head>
+<body>
+  <div class="gitter-chat-embed" style="display:none; "></div>
+  <script>
+      ((window.gitter = {}).chat = {}).options = {
+          room: 'wallabag/wallabag',
+          showChatByDefault: false
+      };
+  </script>
+  <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/" title="Homepage">
+                <img src="/images/logo-navbar.png" />
+                </a></li>
+                         <li><a href="https://www.wallabag.org/pages/features-screenshots.html">
+                             Features
+                          </a></li>
+                         <li><a href="https://www.wallabag.org/pages/download-wallabag.html">
+                             Downloads
+                          </a></li>
+                         <li><a href="http://doc.wallabag.org/en/master/">
+                             Documentation
+                          </a></li>
+                         <li><a href="https://www.wallabag.org/pages/donations.html">
+                             Donations
+                          </a></li>
+                         <li><a href="https://www.wallabag.org/pages/support.html">
+                             Support
+                          </a></li>
+                         <li><a href="/blog_index.html">
+                             Blog
+                          </a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+
+
+            <article>
+                <h1><a href="https://www.wallabag.org/blog/2014/04/10/figures-wallabag-april-2014">Figures about wallabag — April 2014</a></h1>
+                    <div class="well well-sm">
+<div class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2014-04-10T11:08:53+00:00"> Thu 10 April 2014</time>
+    </span>
+
+
+
+
+    <span id="post-share-links">
+        <span class="label label-default">Share</span>
+        <a href="https://sharetodiaspora.github.io/?title=Figures%20about%20wallabag%20%E2%80%94%20April%202014&url=https%3A//www.wallabag.org/blog/2014/04/10/figures-wallabag-april-2014" target="_blank" title="Share on Diaspora">Diaspora*</a>
+        ❄
+        <a href="http://twitter.com/home?status=Figures%20about%20wallabag%20%E2%80%94%20April%202014%20https%3A//www.wallabag.org/blog/2014/04/10/figures-wallabag-april-2014" target="_blank" title="Share on Twitter">Twitter</a>
+        ❄
+        <a href="http://www.facebook.com/sharer/sharer.php?u=https%3A//www.wallabag.org/blog/2014/04/10/figures-wallabag-april-2014" target="_blank" title="Share on Facebook">Facebook</a>
+        ❄
+        <a href="mailto:?subject=Figures%20about%20wallabag%20%E2%80%94%20April%202014&amp;body=https%3A//www.wallabag.org/blog/2014/04/10/figures-wallabag-april-2014" title="Share via Email">Email</a>
+    </span>
+
+    
+</div><!-- /.post-info -->
+                    </div>
+                <div class="content"><p>I <a href="https://www.wallabag.org/2013/12/13/figures-about-poche-december-2013/">published in December</a> figures about wallabag.</p>
+<p>How much did wallabag earn, how much did wallabag spend money since December?</p>
+<h2>How does wallabag cost?</h2>
+<h3>Domain names (at Gandi.net)</h3>
+<p>I bought:</p>
+<ul>
+<li>
+<p>inthepo.ch</p>
+</li>
+<li>
+<p>wallabag.org</p>
+</li>
+<li>
+<p>wllbg.org</p>
+</li>
+</ul>
+<p>I renewed:</p>
+<ul>
+<li>inthepoche.com</li>
+</ul>
+<p><strong>Total: 58,73€</strong></p>
+<h2>How does wallabag earn?</h2>
+<h3>Flattr</h3>
+<p>[table width ="100%" style ="" responsive ="true"]
+[table_head]
+[th_column]Month[/th_column]
+[th_column]Amount[/th_column]
+[/table_head]
+[table_body]
+[table_row]
+[row_column]December[/row_column]
+[row_column]15.28[/row_column]
+[/table_row]
+[table_row]
+[row_column]January 2014[/row_column]
+[row_column]35.45[/row_column]
+[/table_row]
+[table_row]
+[row_column]February[/row_column]
+[row_column]18.32[/row_column]
+[/table_row]
+[table_row]
+[row_column]March[/row_column]
+[row_column]17.50[/row_column]
+[/table_row]
+[/table_body]
+[/table]</p>
+<p><strong>Total: 86,55€</strong></p>
+<h2>Since wallabag start</h2>
+<ul>
+<li>
+<p><strong>Spending: 131,09€</strong></p>
+</li>
+<li>
+<p><strong>Income: 151,46€</strong></p>
+</li>
+</ul>
+<p>Few days ago, I moved 133,96€ from Flattr to paypal account. So, I had 131,28€ on my Paypal account (some fees are deducted). I can use my Paypal account to renew domain names at Gandi.net (it's what I did to renew inthepoche.com this morning).</p>
+<h2>How can I help wallabag?</h2>
+<p>You can use <a href="https://flattr.com/thing/1265480/poche-a-read-it-later-open-source-system">Flattr</a> and <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=9UBA65LG3FX9Y">Paypal</a>.</p>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h1><a href="https://www.wallabag.org/blog/2014/04/03/wallabag-1-6">wallabag 1.6 is here!</a></h1>
+                    <div class="well well-sm">
+<div class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2014-04-03T12:47:23+00:00"> Thu 03 April 2014</time>
+    </span>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="https://www.wallabag.org/tag/release.html">release</a>
+        /
+	<a href="https://www.wallabag.org/tag/v1.html">v1</a>
+
+    <span id="post-share-links">
+        <span class="label label-default">Share</span>
+        <a href="https://sharetodiaspora.github.io/?title=wallabag%201.6%20is%20here%21&url=https%3A//www.wallabag.org/blog/2014/04/03/wallabag-1-6" target="_blank" title="Share on Diaspora">Diaspora*</a>
+        ❄
+        <a href="http://twitter.com/home?status=wallabag%201.6%20is%20here%21%20https%3A//www.wallabag.org/blog/2014/04/03/wallabag-1-6" target="_blank" title="Share on Twitter">Twitter</a>
+        ❄
+        <a href="http://www.facebook.com/sharer/sharer.php?u=https%3A//www.wallabag.org/blog/2014/04/03/wallabag-1-6" target="_blank" title="Share on Facebook">Facebook</a>
+        ❄
+        <a href="mailto:?subject=wallabag%201.6%20is%20here%21&amp;body=https%3A//www.wallabag.org/blog/2014/04/03/wallabag-1-6" title="Share via Email">Email</a>
+    </span>
+
+    
+</div><!-- /.post-info -->
+                    </div>
+                <div class="content"><p><a href="https://github.com/wallabag/wallabag/commit/1a268ba710b2cdb4ede98af3368c43d66c4c5e53">One year ago</a>, I pushed the first files of poche, now wallabag.</p>
+<p>That's why I'm so happy to announce <strong>wallabag 1.6 "Happy birthday!"</strong> today. This release is so great. New features and lots of bugs fixed.</p>
+<p>Download it here: <a href="https://www.wallabag.org/downloads/">https://www.wallabag.org/downloads/</a>
+To update your wallabag, just extract the archive in your folder and clear your cache (on config page). <a href="http://doc.wallabag.org/doku.php?id=wallabag:installing_wallabag#upgrading">Don't forget to read the documentation</a>.</p>
+<p>Framabag will be updated soon.</p>
+<p>Thank you Skibbi, mariroz, Draky50110, Tcitworld, camporez, kevmeyer, bobmaerten, thomaslebeau for this release.</p>
+<h2>Changelog</h2>
+<p>You'll see: wallabag has new great features, like import system or search engine.
+Some old bugs are now fixed: for example, no more problem with the "stay connected" checkbox.</p>
+<h3>New features</h3>
+<ul>
+<li>
+<p>New import system: you just have to upload your file (from third services), take a coffee and wait a little.</p>
+</li>
+<li>
+<p>Search engine</p>
+</li>
+<li>
+<p>You can now type "s" shortcut to save a link so quickly</p>
+</li>
+<li>
+<p>wallabag a link in wallabag #505: when you're reading a saved article with some links inside, you can save them easily, a "W" icon is available.</p>
+</li>
+</ul>
+<h3>Bug fixes</h3>
+<ul>
+<li>
+<p>[fix] redirect on config page after token generation #491</p>
+</li>
+<li>
+<p>[fix] global $http visibility, issues #493, #494, #498</p>
+</li>
+<li>
+<p>[fix] hover problem with logout link #489</p>
+</li>
+<li>
+<p>[fix] on Framabag re-login needed after "bag it!" #509</p>
+</li>
+<li>
+<p>[fix] #490 flattr icon in baggy theme</p>
+</li>
+<li>
+<p>[fix] #483 pdo_sqlite not required if we want mysql / pgsql</p>
+</li>
+<li>
+<p>[fix] RSS Feeds don't validate / W3C #384</p>
+</li>
+<li>
+<p>[fix] links for firefox / android / ios apps</p>
+</li>
+<li>
+<p>[fix] remember scroll position for baggy theme #519</p>
+</li>
+<li>
+<p>[fix] test if user_id doesn't exist in feeds generation</p>
+</li>
+<li>
+<p>[fix] in RSS, link to original article</p>
+</li>
+<li>
+<p>[fix] #115 - stay connected and session livetime</p>
+</li>
+<li>
+<p>[fix] Export wallabag data : not saving but opening in browser #570</p>
+</li>
+</ul>
+<h3>Miscellaneous improvements</h3>
+<ul>
+<li>
+<p>[change] remove old logo #484</p>
+</li>
+<li>
+<p>German, English, French, Polish, Russian and Ukrainian locales updated</p>
+</li>
+<li>
+<p>[add] brazilian portuguese translation</p>
+</li>
+<li>
+<p>translation HOWTO: <a href="https://github.com/wallabag/wallabag/blob/master/TRANSLATION.md">https://github.com/wallabag/wallabag/blob/master/TRANSLATION.md</a></p>
+</li>
+<li>
+<p>[add] Empty cache after changing theme #503</p>
+</li>
+<li>
+<p>[add] empty cache after changing language #492</p>
+</li>
+<li>
+<p>[add] display last check of wallabag release</p>
+</li>
+<li>
+<p>a lot of enhancements related to tags: tags list is now sorted, shows number of articles, autocomplete added according to #477, #542</p>
+</li>
+<li>
+<p>Many enhancements on all themes</p>
+</li>
+</ul>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h1><a href="https://www.wallabag.org/blog/2014/04/01/wallabag-integrates-facebook">wallabag integrates Facebook (okay, it was an April fool)</a></h1>
+                    <div class="well well-sm">
+<div class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2014-04-01T06:26:43+00:00"> Tue 01 April 2014</time>
+    </span>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="https://www.wallabag.org/tag/plouf.html">plouf</a>
+
+    <span id="post-share-links">
+        <span class="label label-default">Share</span>
+        <a href="https://sharetodiaspora.github.io/?title=wallabag%20integrates%20Facebook%20%28okay%2C%20it%20was%20an%20April%20fool%29&url=https%3A//www.wallabag.org/blog/2014/04/01/wallabag-integrates-facebook" target="_blank" title="Share on Diaspora">Diaspora*</a>
+        ❄
+        <a href="http://twitter.com/home?status=wallabag%20integrates%20Facebook%20%28okay%2C%20it%20was%20an%20April%20fool%29%20https%3A//www.wallabag.org/blog/2014/04/01/wallabag-integrates-facebook" target="_blank" title="Share on Twitter">Twitter</a>
+        ❄
+        <a href="http://www.facebook.com/sharer/sharer.php?u=https%3A//www.wallabag.org/blog/2014/04/01/wallabag-integrates-facebook" target="_blank" title="Share on Facebook">Facebook</a>
+        ❄
+        <a href="mailto:?subject=wallabag%20integrates%20Facebook%20%28okay%2C%20it%20was%20an%20April%20fool%29&amp;body=https%3A//www.wallabag.org/blog/2014/04/01/wallabag-integrates-facebook" title="Share via Email">Email</a>
+    </span>
+
+    
+</div><!-- /.post-info -->
+                    </div>
+                <div class="content"><p>Our renaming history changed lot of things in our project.And the least we can say is that it has also changed my life.</p>
+<p>Few weeks ago, Madan Nagaldinne, head of human resources at Facebook, contacted me to discuss about a project that the american firm has for several years: the possibility to save articles to read them later.</p>
+<p>Put yourself in my place, I'm not a fan of this social network, but if I can be able to provide my family a very decent lifestyle is interesting. So without much hesitation, I accepted this new mission.</p>
+<p>However, I had some conditions:</p>
+<ul>
+<li>
+<p>to leave the project open source</p>
+</li>
+<li>
+<p>to still code it in PHP</p>
+</li>
+</ul>
+<p>Facebook answers:</p>
+<ul>
+<li>
+<p>Facebook and open source projects are not incompatible. Most of projects are still open source: <a href="https://code.facebook.com/projects/">https://code.facebook.com/projects/</a></p>
+</li>
+<li>
+<p>PHP is a major language at Facebook. Last news: Hack: a new programming language for HHVM <a href="http://code.facebook.com/posts/264544830379293/hack-a-new-programming-language-for-hhvm/">http://code.facebook.com/posts/264544830379293/hack-a-new-programming-language-for-hhvm/</a></p>
+</li>
+</ul>
+<p>I expected some administrative confirmations before talking to you about this great new. But Facebook didn’t wait and already communicated: Facebook Takes Another Crack At Read-It-Later With “Save” Button <a href="http://techcrunch.com/2014/03/27/facebook-save/">http://techcrunch.com/2014/03/27/facebook-save/</a></p>
+<p>I'll start my new mission in mid-April, I’ll be attached to the french Facebook team with some trips in California from my first days to meet my future colleagues.</p>
+<p>I give you more news in the coming days, I have to go prepare my boxes for the move.</p>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h1><a href="https://www.wallabag.org/blog/2014/03/06/wallabag-available-ios">wallabag available on iOS</a></h1>
+                    <div class="well well-sm">
+<div class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2014-03-06T08:41:45+00:00"> Thu 06 March 2014</time>
+    </span>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="https://www.wallabag.org/tag/ios.html">ios</a>
+        /
+	<a href="https://www.wallabag.org/tag/v1.html">v1</a>
+
+    <span id="post-share-links">
+        <span class="label label-default">Share</span>
+        <a href="https://sharetodiaspora.github.io/?title=wallabag%20available%20on%20iOS&url=https%3A//www.wallabag.org/blog/2014/03/06/wallabag-available-ios" target="_blank" title="Share on Diaspora">Diaspora*</a>
+        ❄
+        <a href="http://twitter.com/home?status=wallabag%20available%20on%20iOS%20https%3A//www.wallabag.org/blog/2014/03/06/wallabag-available-ios" target="_blank" title="Share on Twitter">Twitter</a>
+        ❄
+        <a href="http://www.facebook.com/sharer/sharer.php?u=https%3A//www.wallabag.org/blog/2014/03/06/wallabag-available-ios" target="_blank" title="Share on Facebook">Facebook</a>
+        ❄
+        <a href="mailto:?subject=wallabag%20available%20on%20iOS&amp;body=https%3A//www.wallabag.org/blog/2014/03/06/wallabag-available-ios" title="Share via Email">Email</a>
+    </span>
+
+    
+</div><!-- /.post-info -->
+                    </div>
+                <div class="content"><p>We are so proud to announce our iOS application. You can download it here: <a href="https://itunes.apple.com/app/wallabag/id828331015?mt=8">https://itunes.apple.com/app/wallabag/id828331015?mt=8</a></p>
+<p>Thank you so much <a href="https://twitter.com/blubbbber">Kevin Meyer</a> !</p>
+<p>If you find some bugs, you can open a new issue here: <a href="https://github.com/wallabag/ios-app">https://github.com/wallabag/ios-app</a> or write a comment below.</p>
+<p><a href="https://www.wallabag.org/wp-content/uploads/2014/03/screen568x568_2.jpeg"><img alt="screen568x568_2" src="https://www.wallabag.org/wp-content/uploads/2014/03/screen568x568_2-169x300.jpeg" /></a> <a href="https://www.wallabag.org/wp-content/uploads/2014/03/screen568x568.jpeg"><img alt="screen568x568" src="https://www.wallabag.org/wp-content/uploads/2014/03/screen568x568-169x300.jpeg" /></a></p>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h1><a href="https://www.wallabag.org/blog/2014/02/28/soon-apple-store">Soon on Apple Store…</a></h1>
+                    <div class="well well-sm">
+<div class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2014-02-28T14:23:16+00:00"> Fri 28 February 2014</time>
+    </span>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="https://www.wallabag.org/tag/ios.html">ios</a>
+
+    <span id="post-share-links">
+        <span class="label label-default">Share</span>
+        <a href="https://sharetodiaspora.github.io/?title=Soon%20on%20Apple%20Store%E2%80%A6&url=https%3A//www.wallabag.org/blog/2014/02/28/soon-apple-store" target="_blank" title="Share on Diaspora">Diaspora*</a>
+        ❄
+        <a href="http://twitter.com/home?status=Soon%20on%20Apple%20Store%E2%80%A6%20https%3A//www.wallabag.org/blog/2014/02/28/soon-apple-store" target="_blank" title="Share on Twitter">Twitter</a>
+        ❄
+        <a href="http://www.facebook.com/sharer/sharer.php?u=https%3A//www.wallabag.org/blog/2014/02/28/soon-apple-store" target="_blank" title="Share on Facebook">Facebook</a>
+        ❄
+        <a href="mailto:?subject=Soon%20on%20Apple%20Store%E2%80%A6&amp;body=https%3A//www.wallabag.org/blog/2014/02/28/soon-apple-store" title="Share via Email">Email</a>
+    </span>
+
+    
+</div><!-- /.post-info -->
+                    </div>
+                <div class="content"><p><a href="https://twitter.com/blubbbber">@blubbbber</a> is working on iOS application for wallabag. It should be available next week.</p>
+<p>Click on thumbnails to see wallabag on iOS :-)</p>
+<p>[gallery link="file" columns="2" ids="791,790,788,789"]</p>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h1><a href="https://www.wallabag.org/blog/2014/02/28/ssl-framabag-wallabag">SSL for Framabag and wallabag</a></h1>
+                    <div class="well well-sm">
+<div class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2014-02-28T14:16:56+00:00"> Fri 28 February 2014</time>
+    </span>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="https://www.wallabag.org/tag/framabag.html">framabag</a>
+        /
+	<a href="https://www.wallabag.org/tag/website.html">website</a>
+
+    <span id="post-share-links">
+        <span class="label label-default">Share</span>
+        <a href="https://sharetodiaspora.github.io/?title=SSL%20for%20Framabag%20and%20wallabag&url=https%3A//www.wallabag.org/blog/2014/02/28/ssl-framabag-wallabag" target="_blank" title="Share on Diaspora">Diaspora*</a>
+        ❄
+        <a href="http://twitter.com/home?status=SSL%20for%20Framabag%20and%20wallabag%20https%3A//www.wallabag.org/blog/2014/02/28/ssl-framabag-wallabag" target="_blank" title="Share on Twitter">Twitter</a>
+        ❄
+        <a href="http://www.facebook.com/sharer/sharer.php?u=https%3A//www.wallabag.org/blog/2014/02/28/ssl-framabag-wallabag" target="_blank" title="Share on Facebook">Facebook</a>
+        ❄
+        <a href="mailto:?subject=SSL%20for%20Framabag%20and%20wallabag&amp;body=https%3A//www.wallabag.org/blog/2014/02/28/ssl-framabag-wallabag" title="Share via Email">Email</a>
+    </span>
+
+    
+</div><!-- /.post-info -->
+                    </div>
+                <div class="content"><p>Since few days, <a href="https://www.framabag.org">Framabag</a> and <a href="https://www.wallabag.org">wallabag.org</a> are available only via <a href="https://en.wikipedia.org/wiki/HTTP_Secure">https</a>.</p>
+<p>Normally, all is fine but if you have some problems since this change, you can <a href="http://www.wallabag.org/help/">contact us</a>.</p>
+                </div>
+            </article>
+            <hr/>
+
+        <ul class="pager">
+                <li class="previous"><a href="https://www.wallabag.org/category/posts7.html">&larr; Newer</a></li>
+                <li class="next"><a
+                        href="https://www.wallabag.org/category/posts9.html">Older &rarr;</a></li>
+        </ul>
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+          <div class="col-xs-10">wallabag is free (as in freedom) and <a href="https://github.com/wallabag/wallabag/blob/master/COPYING.md">opensource</a>. It's made by <a href="http://www.loeuillet.org">Nicolas Lœuillet</a>, Thomas Citharel, Jérémy Benoist and many <a href="https://github.com/wallabag/wallabag/graphs/contributors">great contributors</a>.
+             <p><small>This website is powered by <a href="http://docs.getpelican.com/" target="_blank">Pelican</a> and  <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>. You can contribute to it on <a href="https://github.com/wallabag/wallabag.org">github.com/wallabag/wallabag.org</a>.</small></p>             <p><small>We are on <a href="https://twitter.com/wallabagapp">twitter</a>, <a href="https://www.facebook.com/wallabag/">facebook</a>, <a href="https://plus.google.com/+WallabagOrg">google+</a> and <a href="https://framasphere.org/people/2335ff202f920132196e2a0000053625">diaspora*</a>.</small></p>
+          </div>
+      </div>
+   </div>
+</footer>
+<script src="https://www.wallabag.org/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://www.wallabag.org/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="https://www.wallabag.org/theme/js/respond.min.js"></script>
+
+
+</body>
+</html>

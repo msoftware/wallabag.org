@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en"
+>
+<head>
+    <title>April update : some news - wallabag: a self hostable application for saving web pages</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://www.wallabag.org/images/favicon.ico" rel="icon">
+
+<link rel="canonical" href="https://www.wallabag.org/blog/2015/04/05/april-update">
+
+        <meta name="author" content="Nicolas Lœuillet" />
+        <meta name="description" content="No april&#39;s fool this year, but just some news to keep you updated on our work. Work towards 1.9.1 version First of all, there&#39;s quite a few bugs which have been corrected, especially with installation part (still...). Also, a couple of annoying graphic bugs are now gone. An updated Docker image is also on track. Now, talking about some features, I know we said we wouldn&#39;t add any more to 1.x versions, that everything will go to v2, but that kind of work will benefit to all versions anyway. And those are little ones, don&#39;t get excited. ;) I&#39;m happy to announce next versions will feature previous and next navigation buttons just next to the already existing &#34;return to top&#34; one with baggy theme. Default theme and inherited themes will have those buttons in the existing toolbar. You will also be able to navigate through articles by using your right and left keyboard arrows on desktop, or swipe right or left on touchscreen devices. Maybe we could enable vim-style navigation (with hjkl) in the future (there&#39;s a poll, by the way). For an increased usability, we also added a Mark as read and go to next button, when you&#39;ve finished to read an article and do want to go for the next time directly. Also, about the toolbar, we added it at the bottom of articles seen with baggy theme, so that you don&#39;t have to go all the way to top when wanting to do an action. Finally, we now display existing tags when you want to add a tag to an article, in order to avoid having close duplicates and not thinking to tags you already have. You will just have to click on a tag to add it to the list. And, the larger the size of the tag displays, the more it&#39;s used, like a tag cloud. Before wallabag 1.9.1 comes out, we just want to fix a nasty issue with installation with old MySQL versions and it should be ready to go. It could be possible to see a 1.9.2 version come out, though. Work on v2 version If you follow our Github page, you may have seen a lot of Pull Request ready to merge or already merged. That&#39;s a very good sign. Of the new things that are coming, the API is certainly the most important. Documentation is already available and we will provide a guide very soon to connect your app to wallabag. Speaking of apps, the Windows version is the first app currently rewritten for v2 by @jlnostr. Others should follow soon, no worries. Most of the job on wallabag v2 is currently done by @j0k3r, so now you know who to thank. Other news We may attend to the 16th Libre Software Meeting from 2015/07/04 to 2015/07/10 in Beauvais, France. Comme and see us, we&#39;ll have stickers ! Also, Pyves created cool slides to present our wallabag hosted service, Framabag. And finally, we already had wallabag integrated inside YunoHost (source) and ArkOS (source), but we&#39;re now hoping to get wallabag inside CozyCloud. We&#39;ll also try to have it OwnCloud too." />
+
+        <meta property="og:site_name" content="wallabag: a self hostable application for saving web pages" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="April update : some news"/>
+        <meta property="og:url" content="https://www.wallabag.org/blog/2015/04/05/april-update"/>
+        <meta property="og:description" content="No april&#39;s fool this year, but just some news to keep you updated on our work. Work towards 1.9.1 version First of all, there&#39;s quite a few bugs which have been corrected, especially with installation part (still...). Also, a couple of annoying graphic bugs are now gone. An updated Docker image is also on track. Now, talking about some features, I know we said we wouldn&#39;t add any more to 1.x versions, that everything will go to v2, but that kind of work will benefit to all versions anyway. And those are little ones, don&#39;t get excited. ;) I&#39;m happy to announce next versions will feature previous and next navigation buttons just next to the already existing &#34;return to top&#34; one with baggy theme. Default theme and inherited themes will have those buttons in the existing toolbar. You will also be able to navigate through articles by using your right and left keyboard arrows on desktop, or swipe right or left on touchscreen devices. Maybe we could enable vim-style navigation (with hjkl) in the future (there&#39;s a poll, by the way). For an increased usability, we also added a Mark as read and go to next button, when you&#39;ve finished to read an article and do want to go for the next time directly. Also, about the toolbar, we added it at the bottom of articles seen with baggy theme, so that you don&#39;t have to go all the way to top when wanting to do an action. Finally, we now display existing tags when you want to add a tag to an article, in order to avoid having close duplicates and not thinking to tags you already have. You will just have to click on a tag to add it to the list. And, the larger the size of the tag displays, the more it&#39;s used, like a tag cloud. Before wallabag 1.9.1 comes out, we just want to fix a nasty issue with installation with old MySQL versions and it should be ready to go. It could be possible to see a 1.9.2 version come out, though. Work on v2 version If you follow our Github page, you may have seen a lot of Pull Request ready to merge or already merged. That&#39;s a very good sign. Of the new things that are coming, the API is certainly the most important. Documentation is already available and we will provide a guide very soon to connect your app to wallabag. Speaking of apps, the Windows version is the first app currently rewritten for v2 by @jlnostr. Others should follow soon, no worries. Most of the job on wallabag v2 is currently done by @j0k3r, so now you know who to thank. Other news We may attend to the 16th Libre Software Meeting from 2015/07/04 to 2015/07/10 in Beauvais, France. Comme and see us, we&#39;ll have stickers ! Also, Pyves created cool slides to present our wallabag hosted service, Framabag. And finally, we already had wallabag integrated inside YunoHost (source) and ArkOS (source), but we&#39;re now hoping to get wallabag inside CozyCloud. We&#39;ll also try to have it OwnCloud too."/>
+        <meta property="article:published_time" content="2015-04-05" />
+            <meta property="article:section" content="posts" />
+            <meta property="article:author" content="Nicolas Lœuillet" />
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://www.wallabag.org/theme/css/bootstrap.cosmo.min.css" type="text/css"/>
+    <link href="https://www.wallabag.org/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="https://www.wallabag.org/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.wallabag.org/theme/css/style.css" type="text/css"/>
+        <link href="https://www.wallabag.org/extra/css/custom.css" rel="stylesheet">
+
+        <link href="https://www.wallabag.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="wallabag: a self hostable application for saving web pages ATOM Feed"/>
+
+</head>
+<body>
+  <div class="gitter-chat-embed" style="display:none; "></div>
+  <script>
+      ((window.gitter = {}).chat = {}).options = {
+          room: 'wallabag/wallabag',
+          showChatByDefault: false
+      };
+  </script>
+  <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/" title="Homepage">
+                <img src="/images/logo-navbar.png" />
+                </a></li>
+                         <li><a href="https://www.wallabag.org/pages/features-screenshots.html">
+                             Features
+                          </a></li>
+                         <li><a href="https://www.wallabag.org/pages/download-wallabag.html">
+                             Downloads
+                          </a></li>
+                         <li><a href="http://doc.wallabag.org/en/master/">
+                             Documentation
+                          </a></li>
+                         <li><a href="https://www.wallabag.org/pages/donations.html">
+                             Donations
+                          </a></li>
+                         <li><a href="https://www.wallabag.org/pages/support.html">
+                             Support
+                          </a></li>
+                         <li><a href="/blog_index.html">
+                             Blog
+                          </a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+
+
+    <section id="content">
+        <article>
+            <header>
+                <h1>
+                    <a href="https://www.wallabag.org/blog/2015/04/05/april-update"
+                       rel="bookmark"
+                       title="Permalink to April update : some news">
+                        April update : some news
+                    </a>
+                </h1>
+            </header>
+            <article>
+                <div class="well well-sm">
+<div class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2015-04-05T20:00:00+00:00"> Sun 05 April 2015</time>
+    </span>
+
+
+
+
+    <span id="post-share-links">
+        <span class="label label-default">Share</span>
+        <a href="https://sharetodiaspora.github.io/?title=April%20update%20%3A%20some%20news&url=https%3A//www.wallabag.org/blog/2015/04/05/april-update" target="_blank" title="Share on Diaspora">Diaspora*</a>
+        ❄
+        <a href="http://twitter.com/home?status=April%20update%20%3A%20some%20news%20https%3A//www.wallabag.org/blog/2015/04/05/april-update" target="_blank" title="Share on Twitter">Twitter</a>
+        ❄
+        <a href="http://www.facebook.com/sharer/sharer.php?u=https%3A//www.wallabag.org/blog/2015/04/05/april-update" target="_blank" title="Share on Facebook">Facebook</a>
+        ❄
+        <a href="mailto:?subject=April%20update%20%3A%20some%20news&amp;body=https%3A//www.wallabag.org/blog/2015/04/05/april-update" title="Share via Email">Email</a>
+    </span>
+
+    
+</div><!-- /.post-info -->
+                </div>
+                <div class="content">
+                <p>No <a href="https://www.wallabag.org/blog/2014/04/01/wallabag-integrates-facebook">april's fool</a> this year, but just some news to keep you updated on our work. </p>
+<h2>Work towards 1.9.1 version</h2>
+<p>First of all, there's quite a few bugs which have been corrected, especially with installation part (still...). Also, a couple of annoying graphic bugs are now gone. An updated Docker image is also on track.</p>
+<p>Now, talking about some features, I know we said we wouldn't add any more to 1.x versions, that everything will go to v2, but that kind of work will benefit to all versions anyway. And those are little ones, don't get excited. ;)</p>
+<p>I'm happy to announce next versions will feature <em>previous and next navigation buttons</em> just next to the already existing "return to top" one with baggy theme. Default theme and inherited themes will have those buttons in the existing toolbar. </p>
+<p><img alt="buttons" src="/images/wallabag_navigate_arrows.png" /></p>
+<p>You will also be able to navigate through articles by using your <em>right and left keyboard</em> arrows on desktop, or <em>swipe right or left</em> on touchscreen devices. Maybe we could enable vim-style navigation (with <code>hjkl</code>) in the future (there's <a href="https://framadate.org/u6k7qlcmwvdr8df6">a poll</a>, by the way).</p>
+<p>For an increased usability, we also added a <em>Mark as read and go to next button</em>, when you've finished to read an article and do want to go for the next time directly.</p>
+<p>Also, about the toolbar, we added it at the bottom of articles seen with baggy theme, so that you don't have to go all the way to top when wanting to do an action.</p>
+<p>Finally, we now display existing tags when you want to add a tag to an article, in order to avoid having close duplicates and not thinking to tags you already have. You will just have to click on a tag to add it to the list. And, the larger the size of the tag displays, the more it's used, like a tag cloud.</p>
+<p>Before wallabag 1.9.1 comes out, we just want to fix a nasty issue with installation with old MySQL versions and it should be ready to go. It could be possible to see a 1.9.2 version come out, though.</p>
+<h2>Work on v2 version</h2>
+<p>If you follow <a href="https://github.com/wallabag/wallabag/">our Github page</a>, you may have seen a lot of Pull Request ready to merge or already merged. That's a very good sign. Of the new things that are coming, the API is certainly the most important. Documentation is already <a href="http://v2.wallabag.org/api/doc/">available</a> and we will provide a guide very soon to connect your app to wallabag.
+Speaking of apps, the Windows version is the first app <a href="https://github.com/wallabag/windows-app/commits/v2">currently rewritten</a> for v2 by @jlnostr. Others should follow soon, no worries.
+Most of the job on wallabag v2 is currently done by @j0k3r, so now you know who to thank.</p>
+<h2>Other news</h2>
+<p>We may attend to the 16th <a href="https://2015.rmll.info/?lang=en">Libre Software Meeting</a> from 2015/07/04 to 2015/07/10 in Beauvais, France. Comme and see us, we'll have <a href="https://twitter.com/TcitWorld/status/544127704489275392/photo/1">stickers</a> !</p>
+<p>Also, Pyves created <a href="https://framabag.org/cquoi/#/">cool slides</a> to present our wallabag hosted service, <a href="https://framabag.org/">Framabag</a>.</p>
+<p>And finally, we already had wallabag integrated inside <a href="https://yunohost.org">YunoHost</a> (<a href="https://github.com/abeudin/wallabag_ynh">source</a>) and <a href="http://arkos.io/">ArkOS</a> (<a href="https://github.com/cznweb/arkos-applications/tree/master/wallabag">source</a>), but we're now hoping to get wallabag inside <a href="http://cozy.io">CozyCloud</a>. We'll also try to have it <a href="https://owncloud.org/">OwnCloud</a> too.</p>
+                </div>
+            </article>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+          <div class="col-xs-10">wallabag is free (as in freedom) and <a href="https://github.com/wallabag/wallabag/blob/master/COPYING.md">opensource</a>. It's made by <a href="http://www.loeuillet.org">Nicolas Lœuillet</a>, Thomas Citharel, Jérémy Benoist and many <a href="https://github.com/wallabag/wallabag/graphs/contributors">great contributors</a>.
+             <p><small>This website is powered by <a href="http://docs.getpelican.com/" target="_blank">Pelican</a> and  <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>. You can contribute to it on <a href="https://github.com/wallabag/wallabag.org">github.com/wallabag/wallabag.org</a>.</small></p>             <p><small>We are on <a href="https://twitter.com/wallabagapp">twitter</a>, <a href="https://www.facebook.com/wallabag/">facebook</a>, <a href="https://plus.google.com/+WallabagOrg">google+</a> and <a href="https://framasphere.org/people/2335ff202f920132196e2a0000053625">diaspora*</a>.</small></p>
+          </div>
+      </div>
+   </div>
+</footer>
+<script src="https://www.wallabag.org/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://www.wallabag.org/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="https://www.wallabag.org/theme/js/respond.min.js"></script>
+
+
+</body>
+</html>

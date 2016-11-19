@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en"
+>
+<head>
+    <title>interview - wallabag: a self hostable application for saving web pages</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://www.wallabag.org/images/favicon.ico" rel="icon">
+
+
+    <meta name="author" content="Nicolas Lœuillet" />
+    <meta name="keywords" content="interview" />
+
+    <!-- Open Graph tags -->
+        <meta property="og:site_name" content="wallabag: a self hostable application for saving web pages" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="wallabag: a self hostable application for saving web pages"/>
+        <meta property="og:url" content="https://www.wallabag.org"/>
+        <meta property="og:description" content="wallabag: a self hostable application for saving web pages"/>
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://www.wallabag.org/theme/css/bootstrap.cosmo.min.css" type="text/css"/>
+    <link href="https://www.wallabag.org/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="https://www.wallabag.org/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.wallabag.org/theme/css/style.css" type="text/css"/>
+        <link href="https://www.wallabag.org/extra/css/custom.css" rel="stylesheet">
+
+        <link href="https://www.wallabag.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="wallabag: a self hostable application for saving web pages ATOM Feed"/>
+
+</head>
+<body>
+  <div class="gitter-chat-embed" style="display:none; "></div>
+  <script>
+      ((window.gitter = {}).chat = {}).options = {
+          room: 'wallabag/wallabag',
+          showChatByDefault: false
+      };
+  </script>
+  <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/" title="Homepage">
+                <img src="/images/logo-navbar.png" />
+                </a></li>
+                         <li><a href="https://www.wallabag.org/pages/features-screenshots.html">
+                             Features
+                          </a></li>
+                         <li><a href="https://www.wallabag.org/pages/download-wallabag.html">
+                             Downloads
+                          </a></li>
+                         <li><a href="http://doc.wallabag.org/en/master/">
+                             Documentation
+                          </a></li>
+                         <li><a href="https://www.wallabag.org/pages/donations.html">
+                             Donations
+                          </a></li>
+                         <li><a href="https://www.wallabag.org/pages/support.html">
+                             Support
+                          </a></li>
+                         <li><a href="/blog_index.html">
+                             Blog
+                          </a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+
+
+            <article>
+                <h1><a href="https://www.wallabag.org/blog/2016/03/18/some-news">Some news about wallabag</a></h1>
+                    <div class="well well-sm">
+<div class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2016-03-18T13:00:00+01:00"> Fri 18 March 2016</time>
+    </span>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="https://www.wallabag.org/tag/windowsphone.html">windowsphone</a>
+        /
+	<a href="https://www.wallabag.org/tag/communication.html">communication</a>
+        /
+	<a href="https://www.wallabag.org/tag/interview.html">interview</a>
+        /
+	<a href="https://www.wallabag.org/tag/talk.html">talk</a>
+        /
+	<a href="https://www.wallabag.org/tag/goodies.html">goodies</a>
+
+    <span id="post-share-links">
+        <span class="label label-default">Share</span>
+        <a href="https://sharetodiaspora.github.io/?title=Some%20news%20about%20wallabag&url=https%3A//www.wallabag.org/blog/2016/03/18/some-news" target="_blank" title="Share on Diaspora">Diaspora*</a>
+        ❄
+        <a href="http://twitter.com/home?status=Some%20news%20about%20wallabag%20https%3A//www.wallabag.org/blog/2016/03/18/some-news" target="_blank" title="Share on Twitter">Twitter</a>
+        ❄
+        <a href="http://www.facebook.com/sharer/sharer.php?u=https%3A//www.wallabag.org/blog/2016/03/18/some-news" target="_blank" title="Share on Facebook">Facebook</a>
+        ❄
+        <a href="mailto:?subject=Some%20news%20about%20wallabag&amp;body=https%3A//www.wallabag.org/blog/2016/03/18/some-news" title="Share via Email">Email</a>
+    </span>
+
+    
+</div><!-- /.post-info -->
+                    </div>
+                <div class="content"><p>We published several blog posts about our releases during last weeks.<br />
+It's time to talk about other topics.</p>
+<h3>Smartphone applications and addons</h3>
+<p>Julian Oster released a beta version for Windows Phone application. This version uses our v2 API.</p>
+<p><a href="https://www.microsoft.com/en-us/store/apps/wallabagbeta/9nblggh5x3p6">You can download this application here</a>.</p>
+<p>Thibaud Dauce released a new Firefox addon, also based on our v2 API.</p>
+<p><a href="https://addons.mozilla.org/en-US/firefox/addon/wallabag-v2/">You can download this addon here</a>.</p>
+<h3>Interview for a french podcast</h3>
+<p>Some days ago, I gave an interview to NipSource, a french podcast about opensource. <a href="http://nipcast.com/nipsource-24-lextrudeur-de-chocolat/">You can listen this podcast here</a> (click on <code>Téléchargement</code> link to download the MP3 file).</p>
+<h3>PHP Tour, a french tech event</h3>
+<p><a href="https://twitter.com/j0k">Jérémy</a> and <a href="https://twitter.com/nicosomb">I</a> will be at PHP Tour (at Clermont-Ferrand, France), a french event based on PHP talks. We'll discuss about wallabag v2 and the framework we used: Symfony.</p>
+<p>Our talk is here: <a href="http://event.afup.org/php-tour-2016/programme/#1777">http://event.afup.org/php-tour-2016/programme/#1777</a>.</p>
+<p>You can buy tickets here: <a href="http://event.afup.org/php-tour-2016/tickets-inscriptions/">http://event.afup.org/php-tour-2016/tickets-inscriptions/</a>.</p>
+<h3>Stickers</h3>
+<p>We ordered 500 wallabag stickers. We'll send one of these to each of <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=9UBA65LG3FX9Y&amp;lc=gb">our Paypal donator</a>. But if you'll come to PHP Tour, I'm sure I'll have some stickers to give.</p>
+<p><img alt="wallabag stickers" src="/images/stickers.jpg" /></p>
+<p><a href="http://wallabag.spreadshirt.fr/en">We also opened a shop</a>. You can order mugs, badges or a nice hoodie like this one:</p>
+<p><img alt="wallabag hoodie" src="/images/hoodie.jpg" /></p>
+<p>Have a nice day, we still have great features to add into wallabag v2!</p>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h1><a href="https://www.wallabag.org/blog/2014/02/12/wallabag-french-web-radio">wallabag on French web radio</a></h1>
+                    <div class="well well-sm">
+<div class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2014-02-12T07:44:07+00:00"> Wed 12 February 2014</time>
+    </span>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="https://www.wallabag.org/tag/communication.html">communication</a>
+        /
+	<a href="https://www.wallabag.org/tag/interview.html">interview</a>
+
+    <span id="post-share-links">
+        <span class="label label-default">Share</span>
+        <a href="https://sharetodiaspora.github.io/?title=wallabag%20on%20French%20web%20radio&url=https%3A//www.wallabag.org/blog/2014/02/12/wallabag-french-web-radio" target="_blank" title="Share on Diaspora">Diaspora*</a>
+        ❄
+        <a href="http://twitter.com/home?status=wallabag%20on%20French%20web%20radio%20https%3A//www.wallabag.org/blog/2014/02/12/wallabag-french-web-radio" target="_blank" title="Share on Twitter">Twitter</a>
+        ❄
+        <a href="http://www.facebook.com/sharer/sharer.php?u=https%3A//www.wallabag.org/blog/2014/02/12/wallabag-french-web-radio" target="_blank" title="Share on Facebook">Facebook</a>
+        ❄
+        <a href="mailto:?subject=wallabag%20on%20French%20web%20radio&amp;body=https%3A//www.wallabag.org/blog/2014/02/12/wallabag-french-web-radio" title="Share via Email">Email</a>
+    </span>
+
+    
+</div><!-- /.post-info -->
+                    </div>
+                <div class="content"><p>Yesterday, <a href="http://www.giroll.org/pages/radiogiroll">Radio Giroll</a> broadcasted my interview. We talked about poche, wallabag, PHP and the future. Sorry, it's in french. It starts at 1'.</p>
+<p>[audio ogg="http://www.wallabag.org/wp-content/uploads/2014/02/20140211-1911.ogg"][/audio]</p>
+<p>Thank you Thomas, from Giroll.</p>
+                </div>
+            </article>
+            <hr/>
+
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+          <div class="col-xs-10">wallabag is free (as in freedom) and <a href="https://github.com/wallabag/wallabag/blob/master/COPYING.md">opensource</a>. It's made by <a href="http://www.loeuillet.org">Nicolas Lœuillet</a>, Thomas Citharel, Jérémy Benoist and many <a href="https://github.com/wallabag/wallabag/graphs/contributors">great contributors</a>.
+             <p><small>This website is powered by <a href="http://docs.getpelican.com/" target="_blank">Pelican</a> and  <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>. You can contribute to it on <a href="https://github.com/wallabag/wallabag.org">github.com/wallabag/wallabag.org</a>.</small></p>             <p><small>We are on <a href="https://twitter.com/wallabagapp">twitter</a>, <a href="https://www.facebook.com/wallabag/">facebook</a>, <a href="https://plus.google.com/+WallabagOrg">google+</a> and <a href="https://framasphere.org/people/2335ff202f920132196e2a0000053625">diaspora*</a>.</small></p>
+          </div>
+      </div>
+   </div>
+</footer>
+<script src="https://www.wallabag.org/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://www.wallabag.org/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="https://www.wallabag.org/theme/js/respond.min.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en"
+>
+<head>
+    <title>poche 1.0 beta5 - wallabag: a self hostable application for saving web pages</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://www.wallabag.org/images/favicon.ico" rel="icon">
+
+<link rel="canonical" href="https://www.wallabag.org/blog/2013/09/20/poche-1-0-beta5">
+
+        <meta name="author" content="Nicolas Lœuillet" />
+        <meta name="keywords" content="release,v1" />
+        <meta name="description" content="Here is the changelog. adds: you can easily change your theme in your config screen. you can poche a link without bookmarklet and extensions: there is a simple field on config view. scroll position is now saved. When you return on an article, the last scroll position is retained. add warning message when there is no entry in current view add number of results next to pager flattr icon on flattrable articles. bugs: wrong title on favorites and archives pages content was empty when enabling downloading pictures titles with colon bad parsed changes: remove on login and home views useless link “back to home” display sort links only if there is at least 2 articles in current list locale files updated To install or upgrade poche, read the doc. Thank you so much EliasZ, NumEricR and TcitWorld." />
+
+        <meta property="og:site_name" content="wallabag: a self hostable application for saving web pages" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="poche 1.0 beta5"/>
+        <meta property="og:url" content="https://www.wallabag.org/blog/2013/09/20/poche-1-0-beta5"/>
+        <meta property="og:description" content="Here is the changelog. adds: you can easily change your theme in your config screen. you can poche a link without bookmarklet and extensions: there is a simple field on config view. scroll position is now saved. When you return on an article, the last scroll position is retained. add warning message when there is no entry in current view add number of results next to pager flattr icon on flattrable articles. bugs: wrong title on favorites and archives pages content was empty when enabling downloading pictures titles with colon bad parsed changes: remove on login and home views useless link “back to home” display sort links only if there is at least 2 articles in current list locale files updated To install or upgrade poche, read the doc. Thank you so much EliasZ, NumEricR and TcitWorld."/>
+        <meta property="article:published_time" content="2013-09-20" />
+            <meta property="article:section" content="posts" />
+            <meta property="article:tag" content="release" />
+            <meta property="article:tag" content="v1" />
+            <meta property="article:author" content="Nicolas Lœuillet" />
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://www.wallabag.org/theme/css/bootstrap.cosmo.min.css" type="text/css"/>
+    <link href="https://www.wallabag.org/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="https://www.wallabag.org/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.wallabag.org/theme/css/style.css" type="text/css"/>
+        <link href="https://www.wallabag.org/extra/css/custom.css" rel="stylesheet">
+
+        <link href="https://www.wallabag.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="wallabag: a self hostable application for saving web pages ATOM Feed"/>
+
+</head>
+<body>
+  <div class="gitter-chat-embed" style="display:none; "></div>
+  <script>
+      ((window.gitter = {}).chat = {}).options = {
+          room: 'wallabag/wallabag',
+          showChatByDefault: false
+      };
+  </script>
+  <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/" title="Homepage">
+                <img src="/images/logo-navbar.png" />
+                </a></li>
+                         <li><a href="https://www.wallabag.org/pages/features-screenshots.html">
+                             Features
+                          </a></li>
+                         <li><a href="https://www.wallabag.org/pages/download-wallabag.html">
+                             Downloads
+                          </a></li>
+                         <li><a href="http://doc.wallabag.org/en/master/">
+                             Documentation
+                          </a></li>
+                         <li><a href="https://www.wallabag.org/pages/donations.html">
+                             Donations
+                          </a></li>
+                         <li><a href="https://www.wallabag.org/pages/support.html">
+                             Support
+                          </a></li>
+                         <li><a href="/blog_index.html">
+                             Blog
+                          </a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+
+
+    <section id="content">
+        <article>
+            <header>
+                <h1>
+                    <a href="https://www.wallabag.org/blog/2013/09/20/poche-1-0-beta5"
+                       rel="bookmark"
+                       title="Permalink to poche 1.0 beta5">
+                        poche 1.0 beta5
+                    </a>
+                </h1>
+            </header>
+            <article>
+                <div class="well well-sm">
+<div class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2013-09-20T11:54:35+00:00"> Fri 20 September 2013</time>
+    </span>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="https://www.wallabag.org/tag/release.html">release</a>
+        /
+	<a href="https://www.wallabag.org/tag/v1.html">v1</a>
+
+    <span id="post-share-links">
+        <span class="label label-default">Share</span>
+        <a href="https://sharetodiaspora.github.io/?title=poche%201.0%20beta5&url=https%3A//www.wallabag.org/blog/2013/09/20/poche-1-0-beta5" target="_blank" title="Share on Diaspora">Diaspora*</a>
+        ❄
+        <a href="http://twitter.com/home?status=poche%201.0%20beta5%20https%3A//www.wallabag.org/blog/2013/09/20/poche-1-0-beta5" target="_blank" title="Share on Twitter">Twitter</a>
+        ❄
+        <a href="http://www.facebook.com/sharer/sharer.php?u=https%3A//www.wallabag.org/blog/2013/09/20/poche-1-0-beta5" target="_blank" title="Share on Facebook">Facebook</a>
+        ❄
+        <a href="mailto:?subject=poche%201.0%20beta5&amp;body=https%3A//www.wallabag.org/blog/2013/09/20/poche-1-0-beta5" title="Share via Email">Email</a>
+    </span>
+
+    
+</div><!-- /.post-info -->
+                </div>
+                <div class="content">
+                <p>Here is the changelog.</p>
+<p>adds:</p>
+<ul>
+<li>
+<p>you can easily change your theme in your config screen.</p>
+</li>
+<li>
+<p>you can poche a link without bookmarklet and extensions: there is a simple field on config view.</p>
+</li>
+<li>
+<p>scroll position is now saved. When you return on an article, the last scroll position is retained.</p>
+</li>
+<li>
+<p>add warning message when there is no entry in current view</p>
+</li>
+<li>
+<p>add number of results next to pager</p>
+</li>
+<li>
+<p>flattr icon on flattrable articles.</p>
+</li>
+</ul>
+<p>bugs:</p>
+<ul>
+<li>
+<p>wrong title on favorites and archives pages</p>
+</li>
+<li>
+<p>content was empty when enabling downloading pictures</p>
+</li>
+<li>
+<p>titles with colon bad parsed</p>
+</li>
+</ul>
+<p>changes:</p>
+<ul>
+<li>
+<p>remove on login and home views useless link “back to home”</p>
+</li>
+<li>
+<p>display sort links only if there is at least 2 articles in current list</p>
+</li>
+<li>
+<p>locale files updated</p>
+</li>
+</ul>
+<p>To install or upgrade poche, <a href="http://doc.wallabag.org">read the doc</a>.</p>
+<p>Thank you so much EliasZ, NumEricR and TcitWorld.</p>
+                </div>
+            </article>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+          <div class="col-xs-10">wallabag is free (as in freedom) and <a href="https://github.com/wallabag/wallabag/blob/master/COPYING.md">opensource</a>. It's made by <a href="http://www.loeuillet.org">Nicolas Lœuillet</a>, Thomas Citharel, Jérémy Benoist and many <a href="https://github.com/wallabag/wallabag/graphs/contributors">great contributors</a>.
+             <p><small>This website is powered by <a href="http://docs.getpelican.com/" target="_blank">Pelican</a> and  <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>. You can contribute to it on <a href="https://github.com/wallabag/wallabag.org">github.com/wallabag/wallabag.org</a>.</small></p>             <p><small>We are on <a href="https://twitter.com/wallabagapp">twitter</a>, <a href="https://www.facebook.com/wallabag/">facebook</a>, <a href="https://plus.google.com/+WallabagOrg">google+</a> and <a href="https://framasphere.org/people/2335ff202f920132196e2a0000053625">diaspora*</a>.</small></p>
+          </div>
+      </div>
+   </div>
+</footer>
+<script src="https://www.wallabag.org/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://www.wallabag.org/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="https://www.wallabag.org/theme/js/respond.min.js"></script>
+
+
+</body>
+</html>

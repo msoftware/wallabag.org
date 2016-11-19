@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en"
+>
+<head>
+    <title>[Release] wallabag 2.1.3 - wallabag: a self hostable application for saving web pages</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://www.wallabag.org/images/favicon.ico" rel="icon">
+
+<link rel="canonical" href="https://www.wallabag.org/blog/2016/11/04/wallabag-213">
+
+        <meta name="author" content="Nicolas Lœuillet" />
+        <meta name="keywords" content="v2,release" />
+        <meta name="description" content="It&#39;s time to update your wallabag installation, 2.1.3 is here! The documentation for the upgrade is available here. Changelog #2460 UI Changes (@tcitworld, @j0k3r) #2534 Use created_at as default sort (@j0k3r) #2530 Added documentation about failed to load external entity error (@j0k3r, @Strubbl, @nicosomb) #2519 Translation update - French (@j0k3r, @Jibec) #2528 Force user-agent for .slashdot.org (@Kdecherf) #2524 Add Instapaper to CLI import (@lologhi) #2521 fix path for the install scripts (@foxmask) #2520 Inject parameter instead of service (@j0k3r) #2518 docs: fix link to wallabag-stats project (@Strubbl) #2514 docs: update 3rd party projects by Strubbl (@Strubbl) #2513 Updated Capistrano configuration (@nicosomb) #2506 Fixed entries export filtered with a tag (@nicosomb) #2509 Exploded WallabagRestController into many controllers (@nicosomb) #2508 Added the whole path to parameters.yml file (@nicosomb) #2507 Added require.sh to check if composer is installed (@nicosomb) #2500 Added a check in Makefile to see if composer is installed (@nicosomb) #2504 Added tag label in the page title (@nicosomb) #2473 Portuguese (Brazilian) translation (@pmichelazzo, @j0k3r, @nicosomb, @Quent-in, @danbartram, @even-allmighty, @Strubbl, @tcitworld, @benages, @Simounet, @charno6, @Rurik19, @bmillemathias, @cstuder, @egilli, @pmartin) #2493 Add relevant links to fetch content error page (@nicosomb, @bmillemathias) #2486 Added :fr: documentation for wallabag backup (@jlnostr, @nicosomb) #2484 Document what to backup in Wallabag (@bmillemathias) #2485 Fix missing words in Android application documentation (@bmillemathias) #2481 Some fixes (@j0k3r) #2482 If reload content failed, don’t update it (@j0k3r) #2467 Update wallabag version for master branch (@nicosomb) #2466 Removed MD5 hash in documentation (@nicosomb) Download wallabag 2.1.3 To download, install/upgrade wallabag, please read our Downloads page. Need help? We are on Gitter (a chat platform), ping us! You can also open a new issue on GitHub. How can you help us? By using wallabag, by reporting bugs, by translating wallabag and its documentation, by talking about wallabag to your friends, ... Finally, don&#39;t forget that you can also support us via Paypal, Flattr, Gratipay or Bountysource." />
+
+        <meta property="og:site_name" content="wallabag: a self hostable application for saving web pages" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="[Release] wallabag 2.1.3"/>
+        <meta property="og:url" content="https://www.wallabag.org/blog/2016/11/04/wallabag-213"/>
+        <meta property="og:description" content="It&#39;s time to update your wallabag installation, 2.1.3 is here! The documentation for the upgrade is available here. Changelog #2460 UI Changes (@tcitworld, @j0k3r) #2534 Use created_at as default sort (@j0k3r) #2530 Added documentation about failed to load external entity error (@j0k3r, @Strubbl, @nicosomb) #2519 Translation update - French (@j0k3r, @Jibec) #2528 Force user-agent for .slashdot.org (@Kdecherf) #2524 Add Instapaper to CLI import (@lologhi) #2521 fix path for the install scripts (@foxmask) #2520 Inject parameter instead of service (@j0k3r) #2518 docs: fix link to wallabag-stats project (@Strubbl) #2514 docs: update 3rd party projects by Strubbl (@Strubbl) #2513 Updated Capistrano configuration (@nicosomb) #2506 Fixed entries export filtered with a tag (@nicosomb) #2509 Exploded WallabagRestController into many controllers (@nicosomb) #2508 Added the whole path to parameters.yml file (@nicosomb) #2507 Added require.sh to check if composer is installed (@nicosomb) #2500 Added a check in Makefile to see if composer is installed (@nicosomb) #2504 Added tag label in the page title (@nicosomb) #2473 Portuguese (Brazilian) translation (@pmichelazzo, @j0k3r, @nicosomb, @Quent-in, @danbartram, @even-allmighty, @Strubbl, @tcitworld, @benages, @Simounet, @charno6, @Rurik19, @bmillemathias, @cstuder, @egilli, @pmartin) #2493 Add relevant links to fetch content error page (@nicosomb, @bmillemathias) #2486 Added :fr: documentation for wallabag backup (@jlnostr, @nicosomb) #2484 Document what to backup in Wallabag (@bmillemathias) #2485 Fix missing words in Android application documentation (@bmillemathias) #2481 Some fixes (@j0k3r) #2482 If reload content failed, don’t update it (@j0k3r) #2467 Update wallabag version for master branch (@nicosomb) #2466 Removed MD5 hash in documentation (@nicosomb) Download wallabag 2.1.3 To download, install/upgrade wallabag, please read our Downloads page. Need help? We are on Gitter (a chat platform), ping us! You can also open a new issue on GitHub. How can you help us? By using wallabag, by reporting bugs, by translating wallabag and its documentation, by talking about wallabag to your friends, ... Finally, don&#39;t forget that you can also support us via Paypal, Flattr, Gratipay or Bountysource."/>
+        <meta property="article:published_time" content="2016-11-04" />
+            <meta property="article:section" content="posts" />
+            <meta property="article:tag" content="v2" />
+            <meta property="article:tag" content="release" />
+            <meta property="article:author" content="Nicolas Lœuillet" />
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://www.wallabag.org/theme/css/bootstrap.cosmo.min.css" type="text/css"/>
+    <link href="https://www.wallabag.org/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="https://www.wallabag.org/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.wallabag.org/theme/css/style.css" type="text/css"/>
+        <link href="https://www.wallabag.org/extra/css/custom.css" rel="stylesheet">
+
+        <link href="https://www.wallabag.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="wallabag: a self hostable application for saving web pages ATOM Feed"/>
+
+</head>
+<body>
+  <div class="gitter-chat-embed" style="display:none; "></div>
+  <script>
+      ((window.gitter = {}).chat = {}).options = {
+          room: 'wallabag/wallabag',
+          showChatByDefault: false
+      };
+  </script>
+  <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/" title="Homepage">
+                <img src="/images/logo-navbar.png" />
+                </a></li>
+                         <li><a href="https://www.wallabag.org/pages/features-screenshots.html">
+                             Features
+                          </a></li>
+                         <li><a href="https://www.wallabag.org/pages/download-wallabag.html">
+                             Downloads
+                          </a></li>
+                         <li><a href="http://doc.wallabag.org/en/master/">
+                             Documentation
+                          </a></li>
+                         <li><a href="https://www.wallabag.org/pages/donations.html">
+                             Donations
+                          </a></li>
+                         <li><a href="https://www.wallabag.org/pages/support.html">
+                             Support
+                          </a></li>
+                         <li><a href="/blog_index.html">
+                             Blog
+                          </a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+
+
+    <section id="content">
+        <article>
+            <header>
+                <h1>
+                    <a href="https://www.wallabag.org/blog/2016/11/04/wallabag-213"
+                       rel="bookmark"
+                       title="Permalink to [Release] wallabag 2.1.3">
+                        [Release] wallabag 2.1.3
+                    </a>
+                </h1>
+            </header>
+            <article>
+                <div class="well well-sm">
+<div class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2016-11-04T15:00:00+00:00"> Fri 04 November 2016</time>
+    </span>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="https://www.wallabag.org/tag/v2.html">v2</a>
+        /
+	<a href="https://www.wallabag.org/tag/release.html">release</a>
+
+    <span id="post-share-links">
+        <span class="label label-default">Share</span>
+        <a href="https://sharetodiaspora.github.io/?title=%5BRelease%5D%20wallabag%202.1.3&url=https%3A//www.wallabag.org/blog/2016/11/04/wallabag-213" target="_blank" title="Share on Diaspora">Diaspora*</a>
+        ❄
+        <a href="http://twitter.com/home?status=%5BRelease%5D%20wallabag%202.1.3%20https%3A//www.wallabag.org/blog/2016/11/04/wallabag-213" target="_blank" title="Share on Twitter">Twitter</a>
+        ❄
+        <a href="http://www.facebook.com/sharer/sharer.php?u=https%3A//www.wallabag.org/blog/2016/11/04/wallabag-213" target="_blank" title="Share on Facebook">Facebook</a>
+        ❄
+        <a href="mailto:?subject=%5BRelease%5D%20wallabag%202.1.3&amp;body=https%3A//www.wallabag.org/blog/2016/11/04/wallabag-213" title="Share via Email">Email</a>
+    </span>
+
+    
+</div><!-- /.post-info -->
+                </div>
+                <div class="content">
+                <p>It's time to update your wallabag installation, 2.1.3 is here!</p>
+<p><a href="http://doc.wallabag.org/en/master/user/upgrade.html">The documentation for the upgrade is available here</a>.  </p>
+<h2>Changelog</h2>
+<ul>
+<li><a href="https://github.com/wallabag/wallabag/pull/2460">#2460</a> UI Changes (@tcitworld, @j0k3r)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2534">#2534</a> Use created_at as default sort (@j0k3r)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2530">#2530</a> Added documentation about failed to load external entity error (@j0k3r, @Strubbl, @nicosomb)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2519">#2519</a> Translation update - French (@j0k3r, @Jibec)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2528">#2528</a> Force user-agent for .slashdot.org (@Kdecherf)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2524">#2524</a> Add Instapaper to CLI import (@lologhi)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2521">#2521</a> fix path for  the install scripts (@foxmask)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2520">#2520</a> Inject parameter instead of service (@j0k3r)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2518">#2518</a> docs: fix link to wallabag-stats project (@Strubbl)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2514">#2514</a> docs: update 3rd party projects by Strubbl (@Strubbl)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2513">#2513</a> Updated Capistrano configuration (@nicosomb)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2506">#2506</a> Fixed entries export filtered with a tag (@nicosomb)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2509">#2509</a> Exploded WallabagRestController into many controllers (@nicosomb)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2508">#2508</a> Added the whole path to parameters.yml file (@nicosomb)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2507">#2507</a> Added require.sh to check if composer is installed (@nicosomb)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2500">#2500</a> Added a check in Makefile to see if composer is installed (@nicosomb)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2504">#2504</a> Added tag label in the page title (@nicosomb)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2473">#2473</a> Portuguese (Brazilian) translation (@pmichelazzo, @j0k3r, @nicosomb, @Quent-in, @danbartram, @even-allmighty, @Strubbl, @tcitworld, @benages, @Simounet, @charno6, @Rurik19, @bmillemathias, @cstuder, @egilli, @pmartin)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2493">#2493</a> Add relevant links to fetch content error page (@nicosomb, @bmillemathias)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2486">#2486</a> Added :fr: documentation for wallabag backup (@jlnostr, @nicosomb)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2484">#2484</a> Document what to backup in Wallabag (@bmillemathias)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2485">#2485</a> Fix missing words in Android application documentation (@bmillemathias)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2481">#2481</a> Some fixes (@j0k3r)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2482">#2482</a> If reload content failed, don’t update it (@j0k3r)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2467">#2467</a> Update wallabag version for master branch (@nicosomb)</li>
+<li><a href="https://github.com/wallabag/wallabag/pull/2466">#2466</a> Removed MD5 hash in documentation (@nicosomb)</li>
+</ul>
+<hr />
+
+<h2>Download wallabag 2.1.3</h2>
+<p>To download, install/upgrade wallabag, <a href="https://www.wallabag.org/pages/download-wallabag.html">please read our Downloads page</a>.</p>
+<hr />
+
+<h2>Need help?</h2>
+<p><a href="https://gitter.im/wallabag/wallabag">We are on Gitter</a> (a chat platform), ping us! You can also open a <a href="https://github.com/wallabag/wallabag/issues/new">new issue on GitHub</a>.</p>
+<hr />
+
+<h2>How can you help us?</h2>
+<p>By using wallabag, by reporting bugs, by translating wallabag and its documentation, by talking about wallabag to your friends, ...</p>
+<p>Finally, don't forget that <a href="https://www.wallabag.org/pages/donations.html">you can also support us via Paypal, Flattr, Gratipay or Bountysource</a>.</p>
+                </div>
+            </article>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+          <div class="col-xs-10">wallabag is free (as in freedom) and <a href="https://github.com/wallabag/wallabag/blob/master/COPYING.md">opensource</a>. It's made by <a href="http://www.loeuillet.org">Nicolas Lœuillet</a>, Thomas Citharel, Jérémy Benoist and many <a href="https://github.com/wallabag/wallabag/graphs/contributors">great contributors</a>.
+             <p><small>This website is powered by <a href="http://docs.getpelican.com/" target="_blank">Pelican</a> and  <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>. You can contribute to it on <a href="https://github.com/wallabag/wallabag.org">github.com/wallabag/wallabag.org</a>.</small></p>             <p><small>We are on <a href="https://twitter.com/wallabagapp">twitter</a>, <a href="https://www.facebook.com/wallabag/">facebook</a>, <a href="https://plus.google.com/+WallabagOrg">google+</a> and <a href="https://framasphere.org/people/2335ff202f920132196e2a0000053625">diaspora*</a>.</small></p>
+          </div>
+      </div>
+   </div>
+</footer>
+<script src="https://www.wallabag.org/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://www.wallabag.org/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="https://www.wallabag.org/theme/js/respond.min.js"></script>
+
+
+</body>
+</html>
